@@ -170,6 +170,7 @@ header .intro-text .skills {
 }
 section {
   padding: 100px 0;
+  display: block;
 }
 section h2 {
   margin: 0;
@@ -508,4 +509,22 @@ fieldset[disabled] .btn-success.active {
 }
 div#maincontent {
   outline: none;
+}
+
+.map {
+  height: 500px;
+}
+
+@media(max-width:768px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+.map {
+  padding: 0px;
 }
