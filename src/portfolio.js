@@ -52,7 +52,7 @@ class Portfolio extends Component {
 
                 {/*Portfolio Modals*/}
 
-                <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+                <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog"
                      aria-hidden="true">
                     <div className="modal-content">
                         <div className="close-modal" data-dismiss="modal">
@@ -97,7 +97,7 @@ class Portfolio extends Component {
                     </div>
                 </div>
 
-                <div className="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+                <div className="portfolio-modal modal fade" id="portfolioModal2" tabIndex="-1" role="dialog"
                      aria-hidden="true">
                     <div className="modal-content">
                         <div className="close-modal" data-dismiss="modal">
@@ -142,7 +142,7 @@ class Portfolio extends Component {
                     </div>
                 </div>
 
-                <div className="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+                <div className="portfolio-modal modal fade" id="portfolioModal3" tabIndex="-1" role="dialog"
                      aria-hidden="true">
                     <div className="modal-content">
                         <div className="close-modal" data-dismiss="modal">
