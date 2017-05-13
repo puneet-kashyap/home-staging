@@ -11,8 +11,8 @@ class Footer extends Component {
                         <div className="row">
                             <div className="footer-col col-md-4">
                                 <h3>Location</h3>
-                                <p><span>438 University Avenue
-                                    <br/>Toronto, ON M5G 2L1</span></p>
+                                <p><span>7900 Hurontario St. UNIT 207
+                                    <br/>Brampton, ON L6Y0P7</span></p>
                             </div>
                             <div className="footer-col col-md-4">
                                 <h3>Around the Web</h3>
@@ -33,7 +33,7 @@ class Footer extends Component {
                             </div>
                             <div className="footer-col col-md-4">
                                 <h3>About Myself</h3>
-                                <p>Wanna learn more about me. Let's chat. <a href="http://airmiles.ca">Airmiles.ca</a>.</p>
+                                <p>Wanna learn more about me. Let's chat. <a href="http://soniabharadwaj.ca">www.soniabharadwaj.ca</a></p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                Copyright &copy; Kashyap 2017
+                                Copyright &copy; Sonia Bharadwaj 2017
                             </div>
                         </div>
                     </div>
