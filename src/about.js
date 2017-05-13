@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-var about1 = "Enthusiastic IT professional with experience of working in variety of fields from Quality assurance to full stack development to Big Data in Travel, Hospitality, and Loyalty domain.";
-var about2 = "Highly analytical thinking with demonstrated talent for identifying, scrutinizing, improving, and streamlining complex work with continuous process improvements!";
+var about1 = "Sonia Bharadwaj is an experienced real estate agent and professional home decorator. Our team ensures that your property stands out from competitive listings.";
+var about2 = "No matter the size of your project, we can provide a package that meets your needs. Select the right home stager. Let Sonia Bharadwaj showcase your home for a successful sale.";
 
 class About extends Component {
     render() {
