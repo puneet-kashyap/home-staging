@@ -35,7 +35,7 @@ class Footer extends Component {
                                 <h3>About Myself</h3>
                                 <p><span>Wanna learn more about me. Let's chat.
                                 <br/>Ph# 416-951-0581 
-                                <br/><a href="http://soniabharadwaj.ca">www.soniabharadwaj.ca</a>
+                                <br/><a href="http://soniabhardwaj.ca">www.soniabhardwaj.ca</a>
                                 </span></p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                Copyright &copy; Sonia Bharadwaj 2017
+                                Copyright &copy; Sonia Bhardwaj 2017
                             </div>
                         </div>
                     </div>
