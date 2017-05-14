@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 var skill = "Sonia Bharadwaj";
-var skillSet = "Home Staging - Condo Staging - Vacant Home Staging";
+var skillSet = "Real Estate Professional - Home Staging expert - Reliable Consultant";
 
 class Header extends Component {
     render() {

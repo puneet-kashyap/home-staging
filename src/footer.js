@@ -33,7 +33,10 @@ class Footer extends Component {
                             </div>
                             <div className="footer-col col-md-4">
                                 <h3>About Myself</h3>
-                                <p>Wanna learn more about me. Let's chat. <a href="http://soniabharadwaj.ca">www.soniabharadwaj.ca</a></p>
+                                <p><span>Wanna learn more about me. Let's chat.
+                                <br/>Ph# 416-951-0581 
+                                <br/><a href="http://soniabharadwaj.ca">www.soniabharadwaj.ca</a>
+                                </span></p>
                             </div>
                         </div>
                     </div>

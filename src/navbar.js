@@ -39,7 +39,7 @@ class Navbar extends Component {
 }
 
 Navbar.defaultProps = {
-    name: "Stranger"
+    name: "Bharadwaj Home Staging"
 }
 
 export default Navbar;
