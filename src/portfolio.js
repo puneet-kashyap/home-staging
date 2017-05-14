@@ -176,7 +176,7 @@ class Portfolio extends Component {
                             <div className="row">
                                 <div className="col-lg-8 col-lg-offset-2">
                                     <div className="modal-body">
-                                        <h2>Project Title</h2>
+                                        <h2>Commercial property staging</h2>
                                         <hr className="star-primary"/>
                                         <img src={require('./img/circus.png')} className="img-responsive img-centered"
                                              alt="" />
@@ -217,7 +217,7 @@ class Portfolio extends Component {
                             <div className="row">
                                 <div className="col-lg-8 col-lg-offset-2">
                                     <div className="modal-body">
-                                        <h2>Project Title</h2>
+                                        <h2>Vacant home staging</h2>
                                         <hr className="star-primary"/>
                                         <img src={require('./img/game.png')} className="img-responsive img-centered"
                                              alt="" />
@@ -258,7 +258,7 @@ class Portfolio extends Component {
                             <div className="row">
                                 <div className="col-lg-8 col-lg-offset-2">
                                     <div className="modal-body">
-                                        <h2>Project Title</h2>
+                                        <h2>Condo Staging</h2>
                                         <hr className="star-primary"/>
                                         <img src={require('./img/safe.png')} className="img-responsive img-centered"
                                              alt="" />
@@ -300,7 +300,7 @@ class Portfolio extends Component {
                             <div className="row">
                                 <div className="col-lg-8 col-lg-offset-2">
                                     <div className="modal-body">
-                                        <h2>Project Title</h2>
+                                        <h2>Home Staging</h2>
                                         <hr className="star-primary"/>
                                         <img src={require('./img/submarine.png')} className="img-responsive img-centered"
                                              alt="" />
