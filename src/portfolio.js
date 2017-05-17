@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Portfolio extends Component {
-    render() {
+const Portfolio = () => {
         return (
             <div>
             <section id="portfolio">
@@ -331,6 +330,5 @@ class Portfolio extends Component {
             </div>
         );
     }
-}
 
 export default Portfolio;
