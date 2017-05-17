@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 var about1 = "Sonia Bhardwaj is an experienced real estate agent and professional home decorator. Our team ensures that your property stands out from competitive listings.";
 var about2 = "No matter what the size of your project is, we can provide a package that meets your needs. Select the right home stager. Let Sonia Bhardwaj showcase your home for a successful sale.";

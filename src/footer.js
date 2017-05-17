@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 const Footer = () => {
     return (
@@ -33,7 +32,7 @@ const Footer = () => {
                             <h3>About Myself</h3>
                             <p><span>Wanna learn more about me. Let's chat.
                             <br/>Ph# 416-951-0581 
-                            <br/><a href="http://soniabhardwaj.ca">www.soniabhardwaj.ca</a>
+                            <br/><a href="http://addglamour.ca">addglamour.ca</a>
                             </span></p>
                         </div>
                     </div>

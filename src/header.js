@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 var skill = "Sonia Bhardwaj";
 var skillSet = "Real Estate Professional - Home Staging expert - Reliable Consultant";
