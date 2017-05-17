@@ -12,6 +12,7 @@ const Navbar = (props) => {
                             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                         </button>
                         <a className="navbar-brand" href="#page-top">{props.name}</a>
+                        <a className="nav hidden-xs" href="#page-top">The Home Staging Company</a>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav navbar-right">
@@ -36,7 +37,7 @@ const Navbar = (props) => {
 }
 
 Navbar.defaultProps = {
-    name: "Bhardwaj Home Staging"
+    name: "ADD GLAMOUR"
 }
 
 export default Navbar;
