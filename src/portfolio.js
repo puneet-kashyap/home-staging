@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from './modal';
 
 const Portfolio = () => {
         return (
@@ -77,256 +78,39 @@ const Portfolio = () => {
             </section>
 
                 {/*Portfolio Modals*/}
-
-                <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog"
-                     aria-hidden="true">
-                    <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
-                            <div className="lr">
-                                <div className="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-8 col-lg-offset-2">
-                                    <div className="modal-body">
-                                        <h2>Home Staging</h2>
-                                        <hr className="star-primary"/>
-                                        <img src={require('./img/cabin.png')} className="img-responsive img-centered"
-                                             alt="" />
-                                        <p>Use this area of the page to describe your project. You can describe your project details and pictures in this section.</p>
-                                        <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca/"> Toronto</a>
-                                                </strong>
-                                            </li>
-                                            <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> April 2017</a>
-                                                </strong>
-                                            </li>
-                                            <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> Home Staging</a>
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                        <button type="button" className="btn btn-default" data-dismiss="modal"><i
-                                            className="fa fa-times"></i> Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="portfolio-modal modal fade" id="portfolioModal2" tabIndex="-1" role="dialog"
-                     aria-hidden="true">
-                    <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
-                            <div className="lr">
-                                <div className="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-8 col-lg-offset-2">
-                                    <div className="modal-body">
-                                        <h2>Condo Staging</h2>
-                                        <hr className="star-primary"/>
-                                        <img src={require('./img/cake.png')} className="img-responsive img-centered"
-                                             alt="" />
-                                        <p>Use this area of the page to describe your project. You can describe your project details and pictures in this section.</p>
-                                        <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca"> Brampton</a>
-                                                </strong>
-                                            </li>
-                                            <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> May 2017</a>
-                                                </strong>
-                                            </li>
-                                            <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> Condo Staging</a>
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                        <button type="button" className="btn btn-default" data-dismiss="modal"><i
-                                            className="fa fa-times"></i> Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="portfolio-modal modal fade" id="portfolioModal3" tabIndex="-1" role="dialog"
-                     aria-hidden="true">
-                    <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
-                            <div className="lr">
-                                <div className="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-8 col-lg-offset-2">
-                                    <div className="modal-body">
-                                        <h2>Commercial property staging</h2>
-                                        <hr className="star-primary"/>
-                                        <img src={require('./img/circus.png')} className="img-responsive img-centered"
-                                             alt="" />
-                                        <p>Use this area of the page to describe your project. You can describe your project details and pictures in this section.</p>
-                                        <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca/"> Malton</a>
-                                                </strong>
-                                            </li>
-                                            <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> March 2017</a>
-                                                </strong>
-                                            </li>
-                                            <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> Vacant home staging</a>
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                        <button type="button" className="btn btn-default" data-dismiss="modal"><i
-                                            className="fa fa-times"></i> Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="portfolio-modal modal fade" id="portfolioModal4" tabIndex="-1" role="dialog"
-                     aria-hidden="true">
-                    <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
-                            <div className="lr">
-                                <div className="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-8 col-lg-offset-2">
-                                    <div className="modal-body">
-                                        <h2>Vacant home staging</h2>
-                                        <hr className="star-primary"/>
-                                        <img src={require('./img/game.png')} className="img-responsive img-centered"
-                                             alt="" />
-                                        <p>Use this area of the page to describe your project. You can describe your project details and pictures in this section.</p>
-                                        <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca/"> Malton</a>
-                                                </strong>
-                                            </li>
-                                            <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> December 2016</a>
-                                                </strong>
-                                            </li>
-                                            <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> Office Staging</a>
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                        <button type="button" className="btn btn-default" data-dismiss="modal"><i
-                                            className="fa fa-times"></i> Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="portfolio-modal modal fade" id="portfolioModal5" tabIndex="-1" role="dialog"
-                     aria-hidden="true">
-                    <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
-                            <div className="lr">
-                                <div className="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-8 col-lg-offset-2">
-                                    <div className="modal-body">
-                                        <h2>Condo Staging</h2>
-                                        <hr className="star-primary"/>
-                                        <img src={require('./img/safe.png')} className="img-responsive img-centered"
-                                             alt="" />
-                                        <p>Use this area of the page to describe your project. You can describe your project details and pictures in this section.</p>
-                                        <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca/"> Woodbine</a>
-                                                </strong>
-                                            </li>
-                                            <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> October 2016</a>
-                                                </strong>
-                                            </li>
-                                            <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> Home Staging</a>
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                        <button type="button" className="btn btn-default" data-dismiss="modal"><i
-                                            className="fa fa-times"></i> Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="portfolio-modal modal fade" id="portfolioModal6" tabIndex="-1" role="dialog"
-                     aria-hidden="true">
-                    <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
-                            <div className="lr">
-                                <div className="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-8 col-lg-offset-2">
-                                    <div className="modal-body">
-                                        <h2>Home Staging</h2>
-                                        <hr className="star-primary"/>
-                                        <img src={require('./img/submarine.png')} className="img-responsive img-centered"
-                                             alt="" />
-                                        <p>Use this area of the page to describe your project. You can describe your project details and pictures in this section.</p>
-                                        <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca/"> Vaughan</a>
-                                                </strong>
-                                            </li>
-                                            <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> April 2017</a>
-                                                </strong>
-                                            </li>
-                                            <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> Home Staging</a>
-                                                </strong>
-                                            </li>
-                                        </ul>
-                                        <button type="button" className="btn btn-default" data-dismiss="modal"><i
-                                            className="fa fa-times"></i> Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Modal
+                    id='portfolioModal1'
+                    header='Monu'/>
+                <Modal
+                    id='portfolioModal2'
+                    header='Condo Staging'
+                    city='Brampton'
+                    date='May 2017'
+                    service='Condo Staging'/>
+                <Modal
+                    id='portfolioModal3'
+                    header='Commercial property staging'
+                    city='Malton'
+                    date='March 2017'
+                    service='Commercial property staging'/>
+                <Modal
+                    id='portfolioModal4'
+                    header='Vacant home staging'
+                    city='Malton'
+                    date='December 2016'
+                    service='Vacant home staging'/>
+                <Modal
+                    id='portfolioModal5'
+                    header='Condo Staging'
+                    city='Woodbine'
+                    date='October 2016'
+                    service='Condo Staging'/>
+                <Modal
+                    id='portfolioModal6'
+                    header='Home Staging'
+                    city='Vaughan'
+                    date='April 2016'
+                    service='Home Staging'/>
             </div>
         );
     }

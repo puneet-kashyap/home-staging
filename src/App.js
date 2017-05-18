@@ -6,7 +6,7 @@ import Header from './header'
 import Portfolio from './portfolio'
 import About from './about';
 import Contact from './contact';
-import Map from './map'
+import Map from './map';
 
 class App extends Component {
   render() {
