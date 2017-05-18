@@ -1,8 +1,7 @@
 {
-  "name": "my-app",
+  "name": "add-glamour",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://radhasoami.ca/bhardwaj",
   "dependencies": {
     "firebase": "^3.9.0",
     "react": "^15.4.2",

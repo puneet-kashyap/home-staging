@@ -79,8 +79,7 @@ const Portfolio = () => {
 
                 {/*Portfolio Modals*/}
                 <Modal
-                    id='portfolioModal1'
-                    header='Monu'/>
+                    id='portfolioModal1'/>
                 <Modal
                     id='portfolioModal2'
                     header='Condo Staging'
