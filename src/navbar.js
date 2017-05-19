@@ -10,24 +10,25 @@ const Navbar = (props) => {
                                 data-target="#bs-example-navbar-collapse-1">
                             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                         </button>
-                        <a className="navbar-brand" href="#page-top">{props.name}</a>
-                        <a className="nav hidden-xs" href="#page-top">The Home Staging Company</a>
+                        <a href="#">
+                            <img style={{padding:'10px'}} src={require('./img/logo.png')} className="img-responsive" alt="Add Glamour logo" />
+                        </a>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul className="nav navbar-nav navbar-right">
-                            <li className="hidden">
-                                <a href="#page-top"></a>
-                            </li>
-                            <li className="page-scroll">
-                                <a href="#portfolio">Portfolio</a>
-                            </li>
-                            <li className="page-scroll">
-                                <a href="#about">About</a>
-                            </li>
-                            <li className="page-scroll">
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
+                            <ul className="nav navbar-nav navbar-right">
+                                <li className="hidden">
+                                    <a href="#page-top"></a>
+                                </li>
+                                <li className="page-scroll">
+                                    <a href="#portfolio">Portfolio</a>
+                                </li>
+                                <li className="page-scroll">
+                                    <a href="#about">About</a>
+                                </li>
+                                <li className="page-scroll">
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </nav>
