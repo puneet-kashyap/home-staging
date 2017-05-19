@@ -11,7 +11,7 @@ const Navbar = (props) => {
                             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                         </button>
                         <a href="#">
-                            <img style={{padding:'10px'}} src={require('./img/logo.png')} className="img-responsive" alt="Add Glamour logo" />
+                            <img src={require('./img/logo.png')} className="img-responsive logo-img" alt="Add Glamour logo" />
                         </a>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
