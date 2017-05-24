@@ -1,9 +1,12 @@
 import React from 'react';
 import Modal from './modal';
+import Navbar from './navbar';
+import Footer from './footer';
 
 const Portfolio = () => {
         return (
             <div>
+            <Navbar />
             <section id="portfolio">
                 <div className="container">
                     <div className="row">
@@ -110,6 +113,7 @@ const Portfolio = () => {
                     city='Vaughan'
                     date='April 2016'
                     service='Home Staging'/>
+            <Footer />
             </div>
         );
     }

@@ -5,7 +5,7 @@ import Map from './map';
 
 const Contact = () => {
     return (
-    <div>
+    <div id="top">
     <Navbar/>
     <section id="contact">
         <div className="container">
@@ -39,7 +39,7 @@ const Contact = () => {
                         </div>
                 </div>
             </div>
-<div className="row">
+                <div className="row">
                 <div className="col-lg-12 text-center">
                     <h2>Let's Chat.</h2>
                     <hr className="star-primary"></hr>
