@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
     return (
@@ -17,7 +18,12 @@ const Services = () => {
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
                         <h3 style={{'color':'#cddc39'}}>Consultation</h3>
-                        <p>A consultation would include a walk-through which we do as ‘potential buyers’. This helps us determine how to showcase your home’s best features. This would result in detailed recommendations following our Real Estate Profitability Specification Form. This form will be left with the client for further reference (either for further work required from The Add Glamour Co., or as a guide for the clients use).</p><br/>
+                        <p>A consultation would include a walk-through which we do as ‘potential buyers’. This helps us determine how to showcase your home’s best features. This would result in detailed recommendations following our Real Estate Profitability Specification Form. This form will be left with the client for further reference (either for further work required from The Add Glamour Co., or as a guide for the clients use).</p>
+                        <p><h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
+                            $ 80  (Homes up to 1500 sq. ft.)
+                            <br/>$100 (Homes up to 3500 sq. ft.)
+                            <br/>$150 (Homes up to 5000 sq. ft.)
+                        </p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden'}}>
                          <img src={require('./img/handShake.png')} className="img-responsive" alt="Add Glamour consultation" />
@@ -25,10 +31,14 @@ const Services = () => {
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
-                        <h3 style={{'color':'#cddc39'}}>GOLD</h3><br/>
+                        <h3 style={{'color':'#cddc39'}}>GOLD Package</h3>
                         <p>This service is suitable for occupied homes where we work with most of your furniture and add staging accessories to give your home  a completely new look to appeal  the potential buyers.</p>
                         <p>The consultation is included in this service with a report of pre-showcasing requirements. Optionally we also provide a customized staging to meet your budget.</p>
-                        <p><span>FEES:<br/>$650 to $850 (Homes up to 2000 sq. ft.)<br/>$850  to $950 (Homes up to 3000 sq. ft.)</span></p>
+                        <p><h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
+                            $500 to $700 (Homes up to 2000 sq. ft.)
+                            <br/>$700  to $900 (Homes up to 3500 sq. ft.)
+                            <br/>$700  to $900 (Homes up to 3500 sq. ft.)
+                        </p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden'}}>
                         <img src='http://sprucehomes.ca/wp-content/uploads/2016/08/Service-Staging-1-350x350.png'/>
@@ -36,10 +46,12 @@ const Services = () => {
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
-                        <h3 style={{'color':'#cddc39'}}>Silver</h3><br/>
+                        <h3 style={{'color':'#cddc39'}}>Silver Package</h3>
                         <p>This service is suitable for vacant homes where we will provide necessary rental furniture and accessories required to bring life to the home and give a homely feeling  appealing to the potential buyers.</p>
                         <p>The consultation is included in this service and our report will detail all the furniture and accessories that we  will bring before showcasing. We provide the right amount of furniture to minimize cost without compromising the staging.</p>
-                        <p><span>FEES:<br/>The fee will range depending on your budget and requirements</span></p>
+                        <p><h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
+                        The fee will range depending on your budget and requirements.<br/>
+                        <Link to='/contact' hash='#top'>Contact Us </Link>for more details.</p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden','padding-top':'20px'}}>
                         <img src='http://sprucehomes.ca/wp-content/uploads/2016/08/Service-reno-1-350x350.png'/>
@@ -48,10 +60,12 @@ const Services = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-8">
-                        <h3 style={{'color':'#cddc39'}}>Platinum</h3><br/>
+                        <h3 style={{'color':'#cddc39'}}>Platinum Package</h3>
                         <p>This service is suitable for bigger vacant homes where we will provide necessary rental furniture and accessories required to bring life to the home and give a homely feeling  appealing to the potential buyers.</p>
                         <p>The consultation is included in this service and our report will detail all the furniture and accessories that we  will bring before showcasing. We provide the right amount of furniture to minimize cost without compromising the staging.</p>
-                        <p><span>FEES:<br/>The fee will range depending on your budget and requirements</span></p>
+                        <p><h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
+                        The fee will range depending on your budget and requirements.<br/>
+                        <Link to='/contact' hash='#top'>Contact Us </Link>for more details.</p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden','padding-top':'20px'}}>
                         <img src='http://sprucehomes.ca/wp-content/uploads/2016/08/Service-Spruced-1-350x350.png'/>
