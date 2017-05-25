@@ -9,12 +9,13 @@ const Footer = () => {
                         <div className="footer-col col-md-4">
                             <h3>Sonia Bhardwaj</h3>
                             <p><span>Ph.# 416-951-0581
-                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> sonia@addglamour.ca</a>
+                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> sonia@addglamour.ca</a></span>
+                                <span className='hidden-xs'>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7<br/>
                             </span></p>
                         </div>
-                        <div className="footer-col col-md-4">
+                        <div className="footer-col col-md-4 hidden-xs">
                             <h3>Around the Web</h3>
                             <ul className="list-inline">
                                 <li>
@@ -34,7 +35,8 @@ const Footer = () => {
                         <div className="footer-col col-md-4">
                             <h3>Simar Dhaliwal</h3>
                             <p><span>Ph.# 647-292-0009
-                                <a href="mailto:simar@addglamour.ca?Subject=Add%20Glamour" target="_top"> simar@addglamour.ca</a>
+                                <a href="mailto:simar@addglamour.ca?Subject=Add%20Glamour" target="_top"> simar@addglamour.ca</a></span>
+                                <span className='hidden-xs'>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7<br/>
                             </span></p>
