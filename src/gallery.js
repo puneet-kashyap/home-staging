@@ -46,7 +46,7 @@ const images = [
       <div>
        <ImageGallery
           items={images}
-          showThumbnails={false}
+          showThumbnails={true}
           autoPlay={true}
           disableThumbnailScroll={false}
           slideOnThumbnailHover={true}

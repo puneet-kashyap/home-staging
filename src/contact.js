@@ -26,13 +26,13 @@ const Contact = () => {
                             </p>
                         </div>
                         <div className="col-lg-6">
-                            <h3>Tina Bhardwaj</h3>
+                            <h3>Simar Dhaliwal</h3>
                             <p><span>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7
-                                <br/>Ph.# 416-951-0581
+                                <br/>Ph.# 647-292-0009
                                 <br/>Email:
-                                <a href="mailto:sonia@addglamour.ca?Subject=Hello%20again" target="_top"> tina@addglamour.ca</a>
+                                <a href="mailto:sonia@addglamour.ca?Subject=Hello%20again" target="_top"> simar@addglamour.ca</a>
                                 <br/>
                                 </span>
                             </p>

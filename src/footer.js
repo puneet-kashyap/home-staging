@@ -10,7 +10,8 @@ const Footer = () => {
                             <h3>Location</h3>
                             <p><span>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7
-                                <br/><a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> sonia@addglamour.ca</a></span></p>
+                                <br/><a href="http://addglamour.ca">addglamour.ca</a>
+                            </span></p>
                         </div>
                         <div className="footer-col col-md-4">
                             <h3>Around the Web</h3>
@@ -30,10 +31,11 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="footer-col col-md-4">
-                            <h3>About Myself</h3>
-                            <p><span>Wanna learn more about me. Let's chat.
-                            <br/>Ph# 416-951-0581 
-                            <br/><a href="http://addglamour.ca">addglamour.ca</a>
+                            <h3>Contact Us</h3>
+                            <p><span>Sonia # 416-951-0581
+                            <br/>Simar # 647-292-0009
+                            <br/><a href="mailto:info@addglamour.ca?Subject=Add%20Glamour" target="_top"> info@addglamour.ca</a>
+                            
                             </span></p>
                         </div>
                     </div>
