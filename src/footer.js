@@ -7,10 +7,11 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="footer-col col-md-4">
-                            <h3>Location</h3>
-                            <p><span>7900 Hurontario St. UNIT 207
-                                <br/>Brampton, ON L6Y0P7
-                                <br/><a href="http://addglamour.ca">addglamour.ca</a>
+                            <h3>Sonia Bhardwaj</h3>
+                            <p><span>Ph.# 416-951-0581
+                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> sonia@addglamour.ca</a>
+                                <br/>7900 Hurontario St. UNIT 207
+                                <br/>Brampton, ON L6Y0P7<br/>
                             </span></p>
                         </div>
                         <div className="footer-col col-md-4">
@@ -31,11 +32,11 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="footer-col col-md-4">
-                            <h3>Contact Us</h3>
-                            <p><span>Sonia # 416-951-0581
-                            <br/>Simar # 647-292-0009
-                            <br/><a href="mailto:info@addglamour.ca?Subject=Add%20Glamour" target="_top"> info@addglamour.ca</a>
-                            
+                            <h3>Simar Dhaliwal</h3>
+                            <p><span>Ph.# 647-292-0009
+                                <a href="mailto:simar@addglamour.ca?Subject=Add%20Glamour" target="_top"> simar@addglamour.ca</a>
+                                <br/>7900 Hurontario St. UNIT 207
+                                <br/>Brampton, ON L6Y0P7<br/>
                             </span></p>
                         </div>
                     </div>
@@ -45,7 +46,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            Copyright &copy; Sonia Bhardwaj 2017
+                            Copyright &copy; Add Glamour Home Staging 2017
                         </div>
                     </div>
                 </div>
