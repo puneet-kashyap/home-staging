@@ -10,7 +10,7 @@ import Portfolio from './portfolio';
 import Services from './services';
 
 ReactDOM.render((
-  <BrowserRouter forceRefresh='true'>
+  <BrowserRouter forceRefresh={true}>
   <Switch>
     <Route exact path='/' component={App}/>
     <Route path='/contact' component={Contact}/>

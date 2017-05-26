@@ -28,7 +28,7 @@ const Navbar = (props) => {
                                     <Link to='/about#'>About</Link>
                                 </li>
                                 <li className="page-scroll">
-                                    <Link to='/contact' hash='#top'>Contact Us</Link>
+                                    <Link to='/contact'>Contact Us</Link>
                                 </li>
                             </ul>
                     </div>
