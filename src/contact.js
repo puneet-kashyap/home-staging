@@ -2,8 +2,9 @@ import React from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 import Map from './map';
+import { connect } from 'react-redux';
 
-const Contact = () => {
+const Contact = (props) => {
     return (
     <div id="top">
     <Navbar/>
@@ -14,25 +15,25 @@ const Contact = () => {
                     <h1>Contact Us.</h1>
                     <hr className="star-primary"></hr>
                         <div className="col-lg-6">
-                            <h3>Sonia Bhardwaj</h3>
+                            <h3>{props.owner.owner1.name}</h3>
                             <p><span>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7
-                                <br/>Ph.# 416-951-0581
+                                <br/>Ph.# {props.owner.owner1.phone}
                                 <br/>Email:
-                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> sonia@addglamour.ca</a>
+                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> {props.owner.owner1.email}</a>
                                 <br/>
                                 </span>
                             </p>
                         </div>
                         <div className="col-lg-6">
-                            <h3>Simar Dhaliwal</h3>
+                            <h3>{props.owner.owner2.name}</h3>
                             <p><span>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7
-                                <br/>Ph.# 647-292-0009
+                                <br/>Ph.# {props.owner.owner2.phone}
                                 <br/>Email:
-                                <a href="mailto:sonia@addglamour.ca?Subject=Hello%20again" target="_top"> simar@addglamour.ca</a>
+                                <a href="mailto:sonia@addglamour.ca?Subject=Hello%20again" target="_top"> {props.owner.owner2.email}</a>
                                 <br/>
                                 </span>
                             </p>
@@ -55,4 +56,8 @@ const Contact = () => {
 
 }
 
-export default Contact;
+const mapStateToProps = (state) => {
+   return {owner: state.users};
+}
+
+export default connect(mapStateToProps)(Contact);
