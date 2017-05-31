@@ -17,7 +17,7 @@ const Contact = (props) => {
                         <div className="col-lg-6">
                             <h3>{props.owner.owner1.name}</h3>
                             <p><span>
-                                <br/>7900 Hurontario St. UNIT 207
+                                <br/>{props.owner.owner1.address1}
                                 <br/>Brampton, ON L6Y0P7
                                 <br/>Ph.# {props.owner.owner1.phone}
                                 <br/>Email:

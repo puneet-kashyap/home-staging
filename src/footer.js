@@ -12,8 +12,8 @@ const Footer = (props) => {
                             <p><span>Ph.# {props.owner.owner1.phone}
                                 <a href={`mailto:${props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a></span>
                                 <span className='hidden-xs'>
-                                <br/>7900 Hurontario St. UNIT 207
-                                <br/>Brampton, ON L6Y0P7<br/>
+                                <br/>{props.owner.owner1.address1}
+                                <br/>{props.owner.owner1.address2}<br/>
                             </span></p>
                         </div>
                         <div className="footer-col col-md-4 hidden-xs">
@@ -38,8 +38,8 @@ const Footer = (props) => {
                             <p><span>Ph.# {props.owner.owner2.phone}
                                 <a href={`mailto:${props.owner.owner2.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner2.email}</a></span>
                                 <span className='hidden-xs'>
-                                <br/>7900 Hurontario St. UNIT 207
-                                <br/>Brampton, ON L6Y0P7<br/>
+                                <br/>{props.owner.owner2.address1}
+                                <br/>{props.owner.owner2.address2}<br/>
                             </span></p>
                         </div>
                     </div>
