@@ -1,9 +1,9 @@
 const initialState = {
     owner1: {
-        name:'Sumit'
+        name:'Sonia'
     },
     owner2: {
-        name:'Vishal'
+        name:'Simar'
     }
 }
 

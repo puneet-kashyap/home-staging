@@ -10,7 +10,7 @@ const Footer = (props) => {
                         <div className="footer-col col-md-4">
                             <h3>{props.owner.owner1.name}</h3>
                             <p><span>Ph.# {props.owner.owner1.phone}
-                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> {props.owner.owner1.email}</a></span>
+                                <a href={`mailto:${props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a></span>
                                 <span className='hidden-xs'>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7<br/>
@@ -36,7 +36,7 @@ const Footer = (props) => {
                         <div className="footer-col col-md-4">
                             <h3>{props.owner.owner2.name}</h3>
                             <p><span>Ph.# {props.owner.owner2.phone}
-                                <a href="mailto:simar@addglamour.ca?Subject=Add%20Glamour" target="_top"> {props.owner.owner2.email}</a></span>
+                                <a href={`mailto:${props.owner.owner2.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner2.email}</a></span>
                                 <span className='hidden-xs'>
                                 <br/>7900 Hurontario St. UNIT 207
                                 <br/>Brampton, ON L6Y0P7<br/>
