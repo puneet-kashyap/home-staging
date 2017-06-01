@@ -18,10 +18,10 @@ const Contact = (props) => {
                             <h3>{props.owner.owner1.name}</h3>
                             <p><span>
                                 <br/>{props.owner.owner1.address1}
-                                <br/>Brampton, ON L6Y0P7
+                                <br/>{props.owner.owner1.address2}
                                 <br/>Ph.# {props.owner.owner1.phone}
                                 <br/>Email:
-                                <a href="mailto:sonia@addglamour.ca?Subject=Add%20Glamour" target="_top"> {props.owner.owner1.email}</a>
+                                <a href={`mailto:{props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a>
                                 <br/>
                                 </span>
                             </p>
@@ -29,11 +29,11 @@ const Contact = (props) => {
                         <div className="col-lg-6">
                             <h3>{props.owner.owner2.name}</h3>
                             <p><span>
-                                <br/>7900 Hurontario St. UNIT 207
-                                <br/>Brampton, ON L6Y0P7
+                                <br/>{props.owner.owner2.address1}
+                                <br/>{props.owner.owner2.address2}
                                 <br/>Ph.# {props.owner.owner2.phone}
                                 <br/>Email:
-                                <a href="mailto:sonia@addglamour.ca?Subject=Hello%20again" target="_top"> {props.owner.owner2.email}</a>
+                                <a href={`mailto:{props.owner.owner2.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner2.email}</a>
                                 <br/>
                                 </span>
                             </p>

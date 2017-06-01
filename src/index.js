@@ -12,7 +12,7 @@ import Contact from './contact';
 import Portfolio from './portfolio';
 import Services from './services';
 import allReducers from './reducers'
-import {initiateDB} from './actions/user-actions'
+import {initiateDB} from './actions'
 
 const middleware = applyMiddleware(logger)
 export const store = createStore(allReducers, middleware);
