@@ -2,8 +2,9 @@ import React from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const Services = () => {
+const Services = (props) => {
     return (
         <div>
         <Navbar />
@@ -20,9 +21,9 @@ const Services = () => {
                         <h3 style={{'color':'#cddc39'}}>Consultation</h3>
                         <p>A consultation would include a walk-through which we do as ‘potential buyers’. This helps us determine how to showcase your home’s best features. This would result in detailed recommendations following our Real Estate Profitability Specification Form. This form will be left with the client for further reference (either for further work required from The Add Glamour Co., or as a guide for the clients use).</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
-                            <p>$ 80  (Homes up to 1500 sq. ft.)
-                            <br/>$100 (Homes up to 3500 sq. ft.)
-                            <br/>$150 (Homes up to 5000 sq. ft.)
+                            <p>{props.prices.consultation.small}  (Homes up to 1500 sq. ft.)
+                            <br/>{props.prices.consultation.medium} (Homes up to 3500 sq. ft.)
+                            <br/>{props.prices.consultation.large} (Homes up to 5000 sq. ft.)
                         </p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden'}}>
@@ -35,9 +36,9 @@ const Services = () => {
                         <p>This service is suitable for occupied homes where we work with most of your furniture and add staging accessories to give your home  a completely new look to appeal  the potential buyers.</p>
                         <p>The consultation is included in this service with a report of pre-showcasing requirements. Optionally we also provide a customized staging to meet your budget.</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
-                            <p>$500 to $700 (Homes up to 2000 sq. ft.)
-                            <br/>$700  to $900 (Homes up to 3500 sq. ft.)
-                            <br/>$700  to $900 (Homes up to 3500 sq. ft.)
+                            <p>{props.prices.gold.small} (Homes up to 2000 sq. ft.)
+                            <br/>{props.prices.gold.medium} (Homes up to 3500 sq. ft.)
+                            <br/>{props.prices.gold.large} (Homes up to 3500 sq. ft.)
                         </p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden'}}>
@@ -93,4 +94,7 @@ const Services = () => {
     );
 } 
 
-export default Services;
+const mapStateToProps = (state) => {
+   return {prices: state.prices};
+}
+export default connect(mapStateToProps)(Services);
