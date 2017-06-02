@@ -19,7 +19,7 @@ const Services = (props) => {
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
                         <h3 style={{'color':'#cddc39'}}>Consultation</h3>
-                        <p>A consultation would include a walk-through which we do as ‘potential buyers’. This helps us determine how to showcase your home’s best features. This would result in detailed recommendations following our Real Estate Profitability Specification Form. This form will be left with the client for further reference (either for further work required from The Add Glamour Co., or as a guide for the clients use).</p>
+                        <p>{props.services.consultation.p1}</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
                             <p>{props.prices.consultation.small}  (Homes up to 1500 sq. ft.)
                             <br/>{props.prices.consultation.medium} (Homes up to 3500 sq. ft.)
@@ -33,8 +33,8 @@ const Services = (props) => {
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
                         <h3 style={{'color':'#cddc39'}}>GOLD Package</h3>
-                        <p>This service is suitable for occupied homes where we work with most of your furniture and add staging accessories to give your home  a completely new look to appeal  the potential buyers.</p>
-                        <p>The consultation is included in this service with a report of pre-showcasing requirements. Optionally we also provide a customized staging to meet your budget.</p>
+                        <p>{props.services.gold.p1}</p>
+                        <p>{props.services.gold.p2}</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
                             <p>{props.prices.gold.small} (Homes up to 2000 sq. ft.)
                             <br/>{props.prices.gold.medium} (Homes up to 3500 sq. ft.)
@@ -48,8 +48,8 @@ const Services = (props) => {
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
                         <h3 style={{'color':'#cddc39'}}>Silver Package</h3>
-                        <p>This service is suitable for vacant homes where we will provide necessary rental furniture and accessories required to bring life to the home and give a homely feeling  appealing to the potential buyers.</p>
-                        <p>The consultation is included in this service and our report will detail all the furniture and accessories that we  will bring before showcasing. We provide the right amount of furniture to minimize cost without compromising the staging.</p>
+                        <p>{props.services.silver.p1}</p>
+                        <p>{props.services.silver.p2}</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
                         <p>The fee will range depending on your budget and requirements.<br/>
                         <Link to='/contact'>Contact Us </Link>for more details.</p>
@@ -62,8 +62,8 @@ const Services = (props) => {
                 <div className="row">
                     <div className="col-lg-8">
                         <h3 style={{'color':'#cddc39'}}>Platinum Package</h3>
-                        <p>This service is suitable for bigger vacant homes where we will provide necessary rental furniture and accessories required to bring life to the home and give a homely feeling  appealing to the potential buyers.</p>
-                        <p>The consultation is included in this service and our report will detail all the furniture and accessories that we  will bring before showcasing. We provide the right amount of furniture to minimize cost without compromising the staging.</p>
+                        <p>{props.services.platinum.p1}</p>
+                        <p>{props.services.platinum.p2}</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
                         <p>The fee will range depending on your budget and requirements.<br/>
                         <Link to='/contact'>Contact Us </Link>for more details.</p>
@@ -95,6 +95,9 @@ const Services = (props) => {
 } 
 
 const mapStateToProps = (state) => {
-   return {prices: state.prices};
+   return {
+       services: state.services, 
+       prices:state.prices
+   };
 }
 export default connect(mapStateToProps)(Services);

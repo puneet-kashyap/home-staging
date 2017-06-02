@@ -1,15 +1,14 @@
 import fire from '../fire';
 import {store} from '../index'
 
-
-var ref = fire.database().ref();
-
 export const initiateDB = () => {
+    var ref = fire.database().ref();
     ref.once("value")
     .then(function(snapshot) {
         let owner1 = snapshot.child('owners/owner1')
         let owner2 = snapshot.child('owners/owner2')
         let prices = snapshot.child('prices')
+        let services = snapshot.child('services')
         store.dispatch({
             type:'UPDATE_OWNER', 
                 owner1 : {
@@ -38,6 +37,24 @@ export const initiateDB = () => {
                     small : prices.child('gold/small').val(), 
                     medium : prices.child('gold/medium').val(), 
                     large : prices.child('gold/large').val()
+                }
+        })
+        store.dispatch({
+            type:'UPDATE_SERVICE', 
+                consultation : {
+                    p1: services.child('consultation/p1').val()
+                },
+                gold : {
+                    p1: services.child('gold/p1').val(), 
+                    p2: services.child('gold/p2').val()
+                },
+                silver : {
+                    p1: services.child('silver/p1').val(), 
+                    p2: services.child('silver/p2').val()
+                },
+                platinum : {
+                    p1: services.child('platinum/p1').val(), 
+                    p2: services.child('platinum/p2').val()
                 }
         })
     });

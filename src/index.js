@@ -17,8 +17,6 @@ import {initiateDB} from './actions'
 const middleware = applyMiddleware(logger)
 export const store = createStore(allReducers, middleware);
 
-
-initiateDB()
 ReactDOM.render((
   <Provider store={store}>
     <BrowserRouter forceRefresh={true}>
@@ -32,3 +30,4 @@ ReactDOM.render((
     </BrowserRouter>
   </Provider>
 ), document.getElementById('root'));
+initiateDB()
