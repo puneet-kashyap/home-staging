@@ -12,10 +12,6 @@ const Carousel = (props) => {
             <div className="carousel-inner">
                 <div className="item active">
                     <img src={require('./img/house1.jpeg')} className="img-responsive" alt="Los Angeles"/>
-                    <div className="carousel-caption">
-                        <h3>Add Glamour</h3>
-                        <p>Make it beautiful.</p>
-                    </div>
                 </div>
 
                 <div className="item">
