@@ -9,7 +9,7 @@ const Footer = (props) => {
                     <div className="row">
                         <div className="footer-col col-md-4">
                             <h3>{props.owner.owner1.name}</h3>
-                            <p><span>Ph.# {props.owner.owner1.phone}
+                            <p><span>Ph.# {props.owner.owner1.phone}<br/>
                                 <a href={`mailto:${props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a></span>
                                 <span className='hidden-xs'>
                                 <br/>{props.owner.owner1.address1}
@@ -35,7 +35,7 @@ const Footer = (props) => {
                         </div>
                         <div className="footer-col col-md-4">
                             <h3>{props.owner.owner2.name}</h3>
-                            <p><span>Ph.# {props.owner.owner2.phone}
+                            <p><span>Ph.# {props.owner.owner2.phone}<br/>
                                 <a href={`mailto:${props.owner.owner2.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner2.email}</a></span>
                                 <span className='hidden-xs'>
                                 <br/>{props.owner.owner2.address1}
