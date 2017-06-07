@@ -1,14 +1,26 @@
 import fire from '../fire';
 import {store} from '../index'
 
+export const initiateStorage = () => {
+    const storageRef = fire.storage().ref().child('company-logo/logo.png');
+    storageRef.getDownloadURL().then(function(url){
+        const logoUrl = url
+        store.dispatch({
+            type: 'UPDATE_STORAGE',
+            logo: logoUrl
+        })
+    }) 
+}
+
 export const initiateDB = () => {
-    var ref = fire.database().ref();
-    ref.once("value")
+    const dbRef = fire.database().ref();
+    dbRef.once("value")
     .then(function(snapshot) {
         let owner1 = snapshot.child('owners/owner1')
         let owner2 = snapshot.child('owners/owner2')
         let prices = snapshot.child('prices')
         let services = snapshot.child('services')
+        let aboutUs = snapshot.child('about-us')
         store.dispatch({
             type:'UPDATE_OWNER', 
                 owner1 : {
@@ -55,6 +67,18 @@ export const initiateDB = () => {
                 platinum : {
                     p1: services.child('platinum/p1').val(), 
                     p2: services.child('platinum/p2').val()
+                }
+        })
+        store.dispatch({
+            type:'UPDATE_ABOUT_US', 
+                aboutUs : {
+                    p1: aboutUs.child('aboutUs/p1').val(),
+                    p2: aboutUs.child('aboutUs/p2').val(),
+                    p3: aboutUs.child('aboutUs/p3').val(),
+                    p4: aboutUs.child('aboutUs/p4').val()
+                },
+                doYouKnow : {
+                    p1: aboutUs.child('doYouKnow/p1').val()
                 }
         })
     });

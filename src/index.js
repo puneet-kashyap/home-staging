@@ -11,8 +11,9 @@ import About from './about';
 import Contact from './contact';
 import Portfolio from './portfolio';
 import Services from './services';
-import allReducers from './reducers'
-import {initiateDB} from './actions'
+import allReducers from './reducers';
+import {initiateDB} from './actions';
+import {initiateStorage} from './actions';
 
 const middleware = applyMiddleware(logger)
 export const store = createStore(allReducers, middleware);
@@ -31,3 +32,4 @@ ReactDOM.render((
   </Provider>
 ), document.getElementById('root'));
 initiateDB()
+initiateStorage()

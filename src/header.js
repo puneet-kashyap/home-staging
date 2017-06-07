@@ -1,11 +1,14 @@
 import React from 'react';
 import Gallery from './gallery';
+import Carousel from './carousel'
 
 
 const Header = () => {
     return (
-        <div style={{'height':'600px', 'overflow':'hidden'}}>
-            <Gallery />
+        <div>
+            <section className="success" id="header">
+                <Carousel />
+            </section>
         </div>
     );
 }
