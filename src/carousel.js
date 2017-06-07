@@ -11,15 +11,15 @@ const Carousel = (props) => {
             </ol>
             <div className="carousel-inner">
                 <div className="item active">
-                    <img src={require('./img/house1.jpeg')} className="img-responsive" alt="Los Angeles"/>
+                    <img src={require('./img/carousel/house1.jpeg')} className="img-responsive" alt="Los Angeles"/>
                 </div>
 
                 <div className="item">
-                    <img src={require('./img/house1.jpeg')} className="img-responsive" alt="Chicago"/>
+                    <img src={require('./img/carousel/house1.jpeg')} className="img-responsive" alt="Chicago"/>
                 </div>
 
                 <div className="item">
-                    <img src={require('./img/house1.jpeg')} className="img-responsive"alt="New York"/> 
+                    <img src={require('./img/carousel/house1.jpeg')} className="img-responsive"alt="New York"/> 
                 </div>
             </div>
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
