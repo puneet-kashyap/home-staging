@@ -9,10 +9,11 @@ const Carousel = (props) => {
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
             <div className="carousel-inner">
                 <div className="item active">
-                    <img src={require('./img/carousel/house3.jpeg')} className="img-responsive" alt="Toronto"/>
+                    <img src={require('./img/carousel/house5.jpeg')} className="img-responsive" alt="Toronto"/>
                 </div>
 
                 <div className="item">
@@ -20,10 +21,13 @@ const Carousel = (props) => {
                 </div>
 
                 <div className="item">
-                    <img src={require('./img/carousel/house1.jpeg')} className="img-responsive"alt="Mississauga"/> 
+                    <img src={require('./img/carousel/house3.jpeg')} className="img-responsive"alt="Mississauga"/> 
                 </div>
                 <div className="item">
                     <img src={require('./img/carousel/house4.jpeg')} className="img-responsive"alt="Mississauga"/> 
+                </div>
+                <div className="item">
+                    <img src={require('./img/carousel/house1.jpeg')} className="img-responsive"alt="Mississauga"/> 
                 </div>
             </div>
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
