@@ -20,7 +20,7 @@ export const initiateDB = () => {
         let owner2 = snapshot.child('owners/owner2')
         let prices = snapshot.child('prices')
         let services = snapshot.child('services')
-        let aboutUs = snapshot.child('about-us')
+        let aboutUs = snapshot.child('about')
         store.dispatch({
             type:'UPDATE_OWNER', 
                 owner1 : {

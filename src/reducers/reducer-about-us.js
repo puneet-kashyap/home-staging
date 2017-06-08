@@ -1,7 +1,6 @@
-const initialState = {
-    aboutUs:{},
-    doYouKnow:{}
-}
+import * as db from './firebaseDB';
+
+const initialState = db.about
 
 const AboutUsReducer = (state=initialState, action) => {
   switch (action.type) {

@@ -1,9 +1,6 @@
-const initialState = {
-    consultation:{},
-    gold:{},
-    silver:{},
-    platinum:{}
-}
+import * as db from './firebaseDB';
+
+const initialState = db.services;
 
 const ServicesReducer = (state=initialState, action) => {
   switch (action.type) {

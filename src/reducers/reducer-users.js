@@ -1,11 +1,6 @@
-const initialState = {
-    owner1: {
-        name:'Sonia'
-    },
-    owner2: {
-        name:'Simar'
-    }
-}
+import * as db from './firebaseDB';
+
+const initialState = db.owners
 
 const UserReducer = (state=initialState, action) => {
   switch (action.type) {

@@ -3,9 +3,6 @@ import Navbar from './navbar';
 import Footer from './footer';
 import { connect } from 'react-redux';
 
-var about1 = "Add Glamour is the GTA's premier home staging company. Our team ensures that your property stands out from competitive listings. We create an emotional connection between prospective buyers and your property";
-var about2 = "Our packages are competitive, cost effective and provide excellent ROI. No matter what the size of your project is, we can provide a package that meets your needs. Select the right home stager. Let Sonia Bhardwaj showcase your home for a successful sale.";
-
 const About = (props) => {
     return (
         <div>
@@ -32,7 +29,7 @@ const About = (props) => {
                     <div className="col-lg-12">
                         <p>{props.aboutUs.doYouKnow.p1}</p>
                     </div>
-                        <div className="col-lg-6 col-lg-offset-3" style={{'margin-top':'50px'}}>
+                        <div className="col-lg-6 col-lg-offset-3" style={{'marginTop':'50px'}}>
                             <img src={require('./img/business-card.jpeg')} className="img-responsive logo-img" alt="Add Glamour Business Card" />
                     </div>
                 </div>
