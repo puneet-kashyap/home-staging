@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 
 const Contact = (props) => {
     return (
-    <div id="top">
+    <div>
     <Navbar/>
-    <section id="contact">
+    <section id="contact" className="success">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12 text-center">
