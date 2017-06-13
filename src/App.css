@@ -160,7 +160,8 @@ header .intro-text .skills {
   border-color: #18BC9C;
 }
 .logo-img {
-  padding: 5px
+  padding: 5px;
+  background: transparent;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -183,7 +184,7 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 120px 0;
+  padding: 110px 0;
   display: block;
 }
 section h2 {
