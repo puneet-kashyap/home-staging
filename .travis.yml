@@ -8,6 +8,10 @@ cache:
 
 script:
     - echo "Deploying !"
-    
+
+branches:
+  only:
+  - master
+
 notifications:
   email: false
