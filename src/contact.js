@@ -1,63 +1,65 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import Navbar from './navbar';
+import Footer from './footer';
+import Map from './map';
+import { connect } from 'react-redux';
 
-class Contact extends Component {
-    render() {
-        return (
-            <section id="contact">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 text-center">
-                            <h2>Contact Me</h2>
-                            <hr className="star-primary"></hr>
+const Contact = (props) => {
+    return (
+    <div>
+    <Navbar/>
+    <section id="contact" className="success">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12 text-center">
+                    <h1>Contact Us.</h1>
+                    <hr className="star-primary"></hr>
+                        <div className="col-lg-6">
+                            <h3>{props.owner.owner2.name}</h3>
+                            <img src={require('./img/DP/Simar.jpg')} className="img-responsive center-block" alt="Simar Dhaliwal"/>
+                            <p><span>
+                                <br/>{props.owner.owner2.address1}
+                                <br/>{props.owner.owner2.address2}
+                                <br/>Ph.# {props.owner.owner2.phone}
+                                <br/>Email:
+                                <a href={`mailto:{props.owner.owner2.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner2.email}</a>
+                                <br/>
+                                </span>
+                            </p>
                         </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-8 col-lg-offset-2">
-                            <form name="sentMessage" id="contactForm">
-                                <div className="row control-group">
-                                    <div className="form-group col-xs-12 floating-label-form-group controls">
-                                        <label>Name</label>
-                                        <input type="text" className="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name."></input>
-                                            <p className="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div className="row control-group">
-                                    <div className="form-group col-xs-12 floating-label-form-group controls">
-                                        <label>Email Address</label>
-                                        <input type="email" className="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address."></input>
-                                            <p className="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div className="row control-group">
-                                    <div className="form-group col-xs-12 floating-label-form-group controls">
-                                        <label >Phone Number</label>
-                                        <input type="tel" className="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number."></input>
-                                            <p className="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div className="row control-group">
-                                    <div className="form-group col-xs-12 floating-label-form-group controls">
-                                        <label>Message</label>
-                                        <textarea rows="5" className="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                        <p className="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <br></br>
-                                    <div id="success"></div>
-                                    <div className="row">
-                                        <div className="form-group col-xs-12">
-                                            <button type="submit" className="btn btn-success btn-lg">Send</button>
-                                        </div>
-                                    </div>
-                            </form>
-
-                            </div>
-                    </div>
+                        <div className="col-lg-6">
+                            <h3>{props.owner.owner1.name}</h3>
+                            <img src={require('./img/DP/Sonia.jpg')} className="img-responsive center-block" alt="Sonia Bhardwaj"/>
+                            <p><span>
+                                <br/>{props.owner.owner1.address1}
+                                <br/>{props.owner.owner1.address2}
+                                <br/>Ph.# {props.owner.owner1.phone}
+                                <br/>Email:
+                                <a href={`mailto:{props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a>
+                                <br/>
+                                </span>
+                            </p>
+                        </div>
                 </div>
-            </section>
-        );
-    }
+            </div>
+                <div className="row">
+                <div className="col-lg-12 text-center">
+                    <h2>Let's Chat.</h2>
+                    <hr className="star-primary"></hr>
+                    <iframe width="100%" height="500" src="https://console.api.ai/api-client/demo/embedded/3b9af493-8128-477e-b731-676baddb3ffb"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Map/>
+    <Footer />
+    </div>
+);
+
 }
 
-export default Contact;
+const mapStateToProps = (state) => {
+   return {owner: state.users};
+}
+
+export default connect(mapStateToProps)(Contact);

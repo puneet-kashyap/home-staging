@@ -1,45 +1,45 @@
-import React, {Component} from 'react';
-import './App.css';
+import React from 'react';
+import { Link } from 'react-router-dom'
 
-class Navbar extends Component {
 
-    render() {
-        return (
-            <div>
-                <nav id="mainNav" className="navbar navbar-default navbar-fixed-top navbar-custom">
-                    <div className="container">
-                        <div className="navbar-header page-scroll">
-                            <button type="button" className="navbar-toggle" data-toggle="collapse"
-                                    data-target="#bs-example-navbar-collapse-1">
-                                <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
-                            </button>
-                            <a className="navbar-brand" href="#page-top">{this.props.name}</a>
-                        </div>
-                        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+const Navbar = (props) => {
+    return (
+        <div>
+            <nav id="mainNav" className="navbar navbar-default navbar-fixed-top navbar-custom">
+                <div className="container">
+                    <div className="navbar-header page-scroll">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
+                        </button>
+                        <a href="/">
+                            <img src={require('./img/AddGlamourLogo.jpeg')} className="img-responsive logo-img img-rounded" alt="Add Glamour logo" />
+                        </a>
+                    </div>
+                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul className="nav navbar-nav navbar-right">
-                                <li className="hidden">
-                                    <a href="#page-top"></a>
+                                <li >
+                                    <Link to='/services'>Services</Link>
                                 </li>
                                 <li className="page-scroll">
-                                    <a href="#portfolio">Portfolio</a>
+                                    <Link to='/portfolio#'>Portfolio</Link>
                                 </li>
                                 <li className="page-scroll">
-                                    <a href="#about">About</a>
+                                    <Link to='/about#'>About</Link>
                                 </li>
                                 <li className="page-scroll">
-                                    <a href="#contact">Contact</a>
+                                    <Link to='/contact'>Contact Us</Link>
                                 </li>
                             </ul>
-                        </div>
                     </div>
-                </nav>
-            </div>
-        );
-    }
+                </div>
+            </nav>
+        </div>
+    );
 }
 
 Navbar.defaultProps = {
-    name: "Stranger"
+    name: "ADD GLAMOUR"
 }
 
 export default Navbar;
