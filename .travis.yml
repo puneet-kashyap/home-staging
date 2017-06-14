@@ -6,8 +6,14 @@ cache:
   directories:
     - node_modules
 
+before_script:
+    - echo "About to deploy"
+
 script:
     - echo "Deploying !"
+
+after_success:
+    - echo "Successfully deployed"
 
 branches:
   only:
