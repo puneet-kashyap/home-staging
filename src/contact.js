@@ -15,25 +15,27 @@ const Contact = (props) => {
                     <h1>Contact Us.</h1>
                     <hr className="star-primary"></hr>
                         <div className="col-lg-6">
-                            <h3>{props.owner.owner1.name}</h3>
-                            <p><span>
-                                <br/>{props.owner.owner1.address1}
-                                <br/>{props.owner.owner1.address2}
-                                <br/>Ph.# {props.owner.owner1.phone}
-                                <br/>Email:
-                                <a href={`mailto:{props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a>
-                                <br/>
-                                </span>
-                            </p>
-                        </div>
-                        <div className="col-lg-6">
                             <h3>{props.owner.owner2.name}</h3>
+                            <img src={require('./img/DP/Simar.jpg')} className="img-responsive center-block" alt="Simar Dhaliwal"/>
                             <p><span>
                                 <br/>{props.owner.owner2.address1}
                                 <br/>{props.owner.owner2.address2}
                                 <br/>Ph.# {props.owner.owner2.phone}
                                 <br/>Email:
                                 <a href={`mailto:{props.owner.owner2.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner2.email}</a>
+                                <br/>
+                                </span>
+                            </p>
+                        </div>
+                        <div className="col-lg-6">
+                            <h3>{props.owner.owner1.name}</h3>
+                            <img src={require('./img/DP/Sonia.jpg')} className="img-responsive center-block" alt="Sonia Bhardwaj"/>
+                            <p><span>
+                                <br/>{props.owner.owner1.address1}
+                                <br/>{props.owner.owner1.address2}
+                                <br/>Ph.# {props.owner.owner1.phone}
+                                <br/>Email:
+                                <a href={`mailto:{props.owner.owner1.email}?Subject=Add%20Glamour`} target="_top"> {props.owner.owner1.email}</a>
                                 <br/>
                                 </span>
                             </p>
