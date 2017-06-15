@@ -2,58 +2,49 @@ import ImageGallery from 'react-image-gallery';
 import React from 'react';
 import 'react-image-gallery/styles/css/image-gallery.css'
 
-const Gallery = () => {
-const images = [
+
+const prudhommeImages = [
       {
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+        original: require('./img/Prudhomme/IMG_0009.jpg'),
+        thumbnail: require('./img/Prudhomme/IMG_0009.jpg'),
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+        original: require('./img/Prudhomme/IMG_0012.jpg'),
+        thumbnail: require('./img/Prudhomme/IMG_0012.jpg'),
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+        original: require('./img/Prudhomme/IMG_0013.jpg'),
+        thumbnail: require('./img/Prudhomme/IMG_0013.jpg'),
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+        original: require('./img/Prudhomme/IMG_0024.jpg'),
+        thumbnail: require('./img/Prudhomme/IMG_0024.jpg'),
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+        original: require('./img/Prudhomme/IMG_0029.jpg'),
+        thumbnail: require('./img/Prudhomme/IMG_0029.jpg'),
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
-      },
-      {
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
-      },
-      {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
-      },
-      {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+        original: require('./img/Prudhomme/IMG_0033.jpg'),
+        thumbnail: require('./img/Prudhomme/IMG_0033.jpg'),
       }
     ]
- 
+
+const Gallery = (props) => {
     return (
       <div>
        <ImageGallery
-          items={images}
+          items={props.album}
           showThumbnails={true}
           autoPlay={true}
           disableThumbnailScroll={false}
           slideOnThumbnailHover={true}
-          startIndex={2}
+          startIndex={0}
         />
       </div>
     );
 }
-
+Gallery.defaultProps = {
+    album: prudhommeImages
+}
 export default Gallery;

@@ -22,16 +22,16 @@ const Modal = (props) => {
                                         <Gallery />
                                         <p>{props.description}</p>
                                         <ul className="list-inline item-details">
-                                            <li>Client:
-                                                <strong><a href="http://radhasoami.ca/"> {props.client}</a>
+                                            <li>City:
+                                                <strong><a href="https://addglamour.ca/"> {props.client}</a>
                                                 </strong>
                                             </li>
                                             <li>Date:
-                                                <strong><a href="http://radhasoami.ca/"> {props.date}</a>
+                                                <strong><a href="https://addglamour.ca/"> {props.date}</a>
                                                 </strong>
                                             </li>
                                             <li>Service:
-                                                <strong><a href="http://radhasoami.ca/"> {props.service}</a>
+                                                <strong><a href="https://addglamour.ca/"> {props.service}</a>
                                                 </strong>
                                             </li>
                                         </ul>
@@ -50,7 +50,7 @@ const Modal = (props) => {
 Modal.defaultProps = {
     id: "portfolioModal1",
     header: "Home Staging",
-    description: "Use this area of the page to describe your project. You can describe your project details and pictures in this section.",
+    description: "Home staging done at Prudhomme drive, Brampton.",
     client: "Toronto",
     date: "April 2017",
     service: "Home Staging"
