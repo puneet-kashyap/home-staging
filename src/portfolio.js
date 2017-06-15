@@ -23,7 +23,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/cabin.png')} className="img-responsive" alt="Game controller"></img>
+                                <img src={require('./img/Prudhomme/IMG_0013.jpg')} className="img-responsive" alt="Prudhomme Home"></img>
                             </a>
                         </div>
                         <div className="col-sm-4 portfolio-item">
@@ -33,7 +33,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/cake.png')} className="img-responsive" alt="Cabin"></img>                            
+                                <img src={require('./img/Prudhomme/IMG_0009.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                          
                             </a>
                         </div>
                         <div className="col-sm-4 portfolio-item">
@@ -43,7 +43,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/circus.png')} className="img-responsive" alt="Slice of cake"></img>
+                                <img src={require('./img/Prudhomme/IMG_0012.jpg')} className="img-responsive" alt="Prudhomme Home"></img>
                             </a>
                         </div>
                         <div className="col-sm-4 portfolio-item">
@@ -53,7 +53,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/game.png')} className="img-responsive" alt="Cabin"></img>                            
+                                <img src={require('./img/Prudhomme/IMG_0024.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                       
                             </a>
                         </div>
                         <div className="col-sm-4 portfolio-item">
@@ -63,7 +63,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/safe.png')} className="img-responsive" alt="Cabin"></img>                            
+                                <img src={require('./img/Prudhomme/IMG_0029.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                       
                             </a>
                         </div>   
                         <div className="col-sm-4 portfolio-item">
@@ -73,7 +73,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/submarine.png')} className="img-responsive" alt="Cabin"></img>                            
+                                <img src={require('./img/Prudhomme/IMG_0033.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                        
                             </a>
                         </div>                           
                     </div>
@@ -82,7 +82,11 @@ const Portfolio = () => {
 
                 {/*Portfolio Modals*/}
                 <Modal
-                    id='portfolioModal1'/>
+                    id='portfolioModal1'
+                    client='Brampton'
+                    description='Home staging done at Prudhomme drive, Brampton.'
+                />
+                    
                 <Modal
                     id='portfolioModal2'
                     header='Condo Staging'
