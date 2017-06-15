@@ -33,9 +33,9 @@ const Header = () => {
                                 <li>Expect stress free staging and tailored interiors</li>
                             </ul>
                     </div>
-
                 </div>
                 </div>
+                <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameborder="0" allowfullscreen></iframe>
             </section>
         </div>
     );
