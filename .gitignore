@@ -15,5 +15,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+firebase-debug.log*
+settings.json
 .vscode
 

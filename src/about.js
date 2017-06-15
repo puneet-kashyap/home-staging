@@ -1,37 +1,48 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import Navbar from './navbar';
+import Footer from './footer';
+import { connect } from 'react-redux';
 
-var about1 = "Enthusiastic IT professional with experience of working in variety of fields from Quality assurance to full stack development to Big Data in Travel, Hospitality, and Loyalty domain.";
-var about2 = "Highly analytical thinking with demonstrated talent for identifying, scrutinizing, improving, and streamlining complex work with continuous process improvements!";
-
-class About extends Component {
-    render() {
-        return (
-            <section className="success" id="about">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 text-center">
-                            <h2>About</h2>
-                            <hr className="star-light"></hr>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-lg-offset-2">
-                            <p>{about1}</p>
-                        </div>
-                        <div className="col-lg-4">
-                            <p>{about2}</p>
-                        </div>
-                        <div className="col-lg-8 col-lg-offset-2 text-center">
-                            <a href="#" className="btn btn-lg btn-outline">
-                                <i className="fa fa-download"></i> Download Profile
-                            </a>
-                        </div>
+const About = (props) => {
+    return (
+        <div>
+        <Navbar />
+        <section className="success" id="about">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center">
+                        <h2>About Us</h2>
+                        <hr className="star-light"></hr>
                     </div>
                 </div>
-            </section>
-        );
-    }
-}
+                <div className="row">
+                    <div className="col-lg-12">
+                        <p>{props.aboutUs.aboutUs.p1}</p>
+                        <p>{props.aboutUs.aboutUs.p2}</p>
+                        <p>{props.aboutUs.aboutUs.p3}</p>
+                        <p>{props.aboutUs.aboutUs.p4}</p>
+                    </div>
+                    <div className="col-lg-12 text-center">
+                        <h3>Do You Know</h3>
+                        <hr className="star-light"></hr>
+                    </div>
+                    <div className="col-lg-12">
+                        <p>{props.aboutUs.doYouKnow.p1}</p>
+                    </div>
+                        <div className="col-lg-6 col-lg-offset-3" style={{'marginTop':'50px'}}>
+                            <img src={require('./img/business-card.jpeg')} className="img-responsive logo-img" alt="Add Glamour Business Card" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <Footer />
+        </div>
+    );
+} 
 
-export default About;
+const mapStateToProps = (state) => {
+   return {
+       aboutUs: state.aboutUs
+   };
+}
+export default connect(mapStateToProps)(About);

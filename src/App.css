@@ -85,6 +85,12 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+#header ul {
+  font-size: 20px;
+}
+#header h3 {
+  margin-top: 50px;
+}
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
@@ -98,9 +104,9 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
+  background: rgb(99, 28, 130);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   border: none;
 }
@@ -118,6 +124,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li a {
   color: white;
+}
+.navbar-nav li a{
+  line-height: 50px;
 }
 .navbar-custom .navbar-nav li a:hover {
   color: #18BC9C;
@@ -148,9 +157,13 @@ header .intro-text .skills {
   color: white;
   border-color: #18BC9C;
 }
+.logo-img {
+  padding: 5px;
+  background: transparent;
+}
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 25px 0;
+    padding: 5px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -169,7 +182,7 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 110px 0;
   display: block;
 }
 section h2 {
@@ -177,12 +190,12 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: darkcyan;
-  color: white;
+  background: linear-gradient(rebeccapurple, #7c23a1);
+  color: lawngreen;
 }
 @media (max-width: 767px) {
   section {
-    padding: 75px 0;
+    padding: 100px 0;
   }
   section.first {
     padding-top: 75px;
@@ -293,14 +306,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: rgb(99, 28, 130);
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #233140;
+  background-color: #601a7d;
 }
 .btn-outline {
   color: white;
@@ -511,6 +524,12 @@ div#maincontent {
   outline: none;
 }
 
+#myCarousel .item img{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
 .map {
   height: 500px;
 }
@@ -519,6 +538,9 @@ div#maincontent {
   .map {
     height: 75%;
   }
+  #myCarousel .item img{
+  height: auto;
+}
 }
 
 .map iframe {
