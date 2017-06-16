@@ -10,7 +10,7 @@ const Header = () => {
                 <Carousel />
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-12 text-center" style={{'padding-top':'25px'}}>
+                    <div className="col-lg-12 text-center" style={{'paddingTop':'25px'}}>
                         <h2>Add Glamour</h2>
                         <h4>The Staging Company</h4>
                         <hr className="star-light"></hr>
