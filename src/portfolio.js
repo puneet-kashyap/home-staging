@@ -77,12 +77,12 @@ const Portfolio = () => {
                             </a>
                         </div>                          
                     </div>
-                    /* YouTube embedded */
+                    
                     <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameBorder="0" allowFullscreen></iframe>
                     <div className="embed-responsive embed-responsive-16by9 visible-xs">
                         <iframe className="visible-xs center-block embed-responsive-item" src="https://www.youtube.com/embed/z82anwWv6EY"></iframe>
                     </div> 
-                    /* YouTube ended */
+                
                 </div>
             </section>
 
