@@ -42,7 +42,7 @@ const Services = (props) => {
                         </p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden'}}>
-                        <img src='http://sprucehomes.ca/wp-content/uploads/2016/08/Service-Staging-1-350x350.png'/>
+                        <img src={require('./img/Services/Service1.png')} className="img-responsive" alt="Add Glamour Gold package" />
                     </div>
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
@@ -55,7 +55,7 @@ const Services = (props) => {
                         <Link to='/contact'>Contact Us </Link>for more details.</p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden','paddingTop':'20px'}}>
-                        <img src='http://sprucehomes.ca/wp-content/uploads/2016/08/Service-reno-1-350x350.png'/>
+                        <img src={require('./img/Services/Service2.png')} className="img-responsive" alt="Add Glamour Silver package" />
                     </div>
                     
                 </div>
@@ -69,7 +69,7 @@ const Services = (props) => {
                         <Link to='/contact'>Contact Us </Link>for more details.</p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden','paddingTop':'20px'}}>
-                        <img src='http://sprucehomes.ca/wp-content/uploads/2016/08/Service-Spruced-1-350x350.png'/>
+                        <img src={require('./img/Services/Service3.png')} className="img-responsive" alt="Add Glamour Platinum package" />
                     </div>
                 </div>
                 <div className="row">
