@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from './gallery';
-
+import { prudhommeImages } from './files/images';
 
 const Modal = (props) => {
     return (
@@ -19,7 +19,7 @@ const Modal = (props) => {
                                     <div className="modal-body">
                                         <h2>{props.header}</h2>
                                         <hr className="star-primary"/>
-                                        <Gallery />
+                                        <Gallery album={prudhommeImages}/>
                                         <p>{props.description}</p>
                                         <ul className="list-inline item-details">
                                             <li>City:
