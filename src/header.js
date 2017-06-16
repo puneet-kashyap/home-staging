@@ -10,7 +10,7 @@ const Header = () => {
                 <Carousel />
                 <div className="container">
                     <div className="row">
-                    <div className="col-lg-12 text-center" style={{'padding-top':'25px'}}>
+                    <div className="col-lg-12 text-center" style={{'paddingTop':'25px'}}>
                         <h2>Add Glamour</h2>
                         <h4>The Staging Company</h4>
                         <hr className="star-light"></hr>
@@ -32,10 +32,14 @@ const Header = () => {
                                 <li>We design with simplicity and organization</li>
                                 <li>Expect stress free staging and tailored interiors</li>
                             </ul>
+                            <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameBorder="0" allowFullscreen></iframe>
+                        <div className="embed-responsive embed-responsive-16by9 visible-xs">
+                            <iframe className="visible-xs center-block embed-responsive-item" src="https://www.youtube.com/embed/z82anwWv6EY"></iframe>
+                        </div> 
                     </div>
                 </div>
                 </div>
-                <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameborder="0" allowfullscreen></iframe>
+                 
             </section>
         </div>
     );

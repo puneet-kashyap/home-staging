@@ -75,12 +75,14 @@ const Portfolio = () => {
                                 </div>
                                 <img src={require('./img/Prudhomme/IMG_0033.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                        
                             </a>
-                        </div>
-                        <iframe className="hidden-xs center-block embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameborder="0" allowfullscreen></iframe>
-                        <div class="col-xs-12 embed-responsive embed-responsive-16by9 visible-xs">
-                            <iframe className="center-block embed-responsive-item visible-xs" src="https://www.youtube.com/embed/z82anwWv6EY" allowfullscreen></iframe>
                         </div>                          
                     </div>
+                    
+                    <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameBorder="0" allowFullscreen></iframe>
+                    <div className="embed-responsive embed-responsive-16by9 visible-xs">
+                        <iframe className="visible-xs center-block embed-responsive-item" src="https://www.youtube.com/embed/z82anwWv6EY"></iframe>
+                    </div> 
+                
                 </div>
             </section>
 
