@@ -13,7 +13,7 @@ const Services = (props) => {
                 <div className="row">
                     <div className="col-lg-12 text-center">
                         <h2>Services</h2>
-                        <hr className="star-light"></hr>
+                        <hr className="star-primary"></hr>
                     </div>
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
