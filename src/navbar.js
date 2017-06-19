@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar = (props) => {
     return (
         <div>
-            <nav id="mainNav" className="navbar navbar-default navbar-fixed-top navbar-custom">
+            <nav id="mainNav" className="navbar navbar-default navbar-custom">
                 <div className="container">
                     <div className="navbar-header page-scroll">
                         <button type="button" className="navbar-toggle" data-toggle="collapse"
