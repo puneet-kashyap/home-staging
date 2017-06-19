@@ -106,9 +106,8 @@ header .intro-text .skills {
 .navbar-custom {
   background: #64138d;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*text-transform: uppercase;*/
   font-weight: 700;
-  /*border-bottom: inset;*/
+  border-color:none; 
 }
 .navbar-custom .navbar-brand {
   color: white;
