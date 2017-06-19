@@ -32,13 +32,13 @@ const Services = (props) => {
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
-                        <h3 style={{'color':'#cddc39'}}>GOLD Package</h3>
+                        <h3 style={{'color':'#cddc39'}}>SILVER Package</h3>
                         <p>{props.services.gold.p1}</p>
                         <p>{props.services.gold.p2}</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
                             <p>{props.prices.gold.small} (Homes up to 2000 sq. ft.)
                             <br/>{props.prices.gold.medium} (Homes up to 3500 sq. ft.)
-                            <br/>{props.prices.gold.large} (Homes up to 3500 sq. ft.)
+                            <br/>{props.prices.gold.large} (Homes up to 5000 sq. ft.)
                         </p>
                     </div>
                     <div className="col-lg-4 img-responsive hidden-xs" style={{'overflow':'hidden'}}>
@@ -47,7 +47,7 @@ const Services = (props) => {
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
-                        <h3 style={{'color':'#cddc39'}}>Silver Package</h3>
+                        <h3 style={{'color':'#cddc39'}}>GOLD Package</h3>
                         <p>{props.services.silver.p1}</p>
                         <p>{props.services.silver.p2}</p>
                         <h4 style={{'color':'palegoldenrod'}}>FEES:</h4>
