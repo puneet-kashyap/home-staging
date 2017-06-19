@@ -52,11 +52,11 @@ hr.star-light:after {
   color: white;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: green;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #a9d73d;
 }
 .img-centered {
   margin: 0 auto;
@@ -104,11 +104,10 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: rgb(99, 28, 130);
+  background: #64138d;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*text-transform: uppercase;*/
   font-weight: 700;
-  border: none;
+  border-color:none; 
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -182,20 +181,21 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 110px 0;
+  /*padding: 110px 0;*/
   display: block;
 }
 section h2 {
-  margin: 0;
+  margin: 10px;
   font-size: 3em;
 }
 section.success {
-  background: linear-gradient(rebeccapurple, #7c23a1);
-  color: lawngreen;
+  /*background: linear-gradient(rebeccapurple, #7c23a1);*/
+  color: purple;
+  margin-top: -20px;
 }
 @media (max-width: 767px) {
   section {
-    padding: 100px 0;
+   /* padding: 100px 0;*/
   }
   section.first {
     padding-top: 75px;
@@ -306,14 +306,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: rgb(99, 28, 130);
+  background-color: #64138d;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #601a7d;
+  background-color: #551078;
 }
 .btn-outline {
   color: white;

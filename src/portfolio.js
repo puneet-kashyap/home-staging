@@ -7,7 +7,7 @@ const Portfolio = () => {
         return (
             <div>
             <Navbar />
-            <section id="portfolio">
+            <section  className="success" id="portfolio">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 text-center">
