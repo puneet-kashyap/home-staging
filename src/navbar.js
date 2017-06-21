@@ -1,39 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import SubNav  from './subnav';
 
 
 const Navbar = (props) => {
     return (
         <div>
-            <nav id="mainNav" className="navbar navbar-default navbar-custom">
+            <nav className="hidden-xs navbar navbar-default navbar-custom">
                 <div className="container">
-                    <div className="navbar-header page-scroll">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1">
-                            <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
-                        </button>
+                    <div className="navbar-header">
                         <a href="/">
                             <img src={require('./img/logo.png')} className="img-responsive logo-img img-rounded" alt="Add Glamour logo" />
                         </a>
                     </div>
-                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul className="nav navbar-nav navbar-right">
-                                <li >
-                                    <Link to='/services'>Services</Link>
-                                </li>
-                                <li className="page-scroll">
-                                    <Link to='/portfolio#'>Portfolio</Link>
-                                </li>
-                                <li className="page-scroll">
-                                    <Link to='/about#'>About</Link>
-                                </li>
-                                <li className="page-scroll">
-                                    <Link to='/contact'>Contact Us</Link>
-                                </li>
-                            </ul>
+                    <div className="navbar-header navbar-right">
+                        <a href="/">
+                            <img src={require('./img/bCard.jpeg')} className="img-responsive logo-img img-rounded" alt="Add Glamour logo" />
+                        </a>
                     </div>
                 </div>
             </nav>
+           <SubNav />
         </div>
     );
 }
