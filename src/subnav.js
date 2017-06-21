@@ -16,6 +16,9 @@ const SubNav = () => {
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul className="nav navbar-nav">
                                 <li >
+                                    <Link to='/'>Home</Link>
+                                </li>
+                                <li >
                                     <Link to='/services'>Services</Link>
                                 </li>
                                 <li className="page-scroll">
