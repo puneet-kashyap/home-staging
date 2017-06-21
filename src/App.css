@@ -154,6 +154,12 @@ header .intro-text .skills {
   float: left;
   margin-left: 10px;
 }
+.navbar-custom .tagline {
+  color:darkturquoise;
+  font-size: 12px;
+  float: right;
+  padding: 15px;
+}
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #18BC9C;
