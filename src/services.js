@@ -32,11 +32,7 @@ const Services = (props) => {
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
-<<<<<<< HEAD
-                        <h3 style={{'color':'#cddc39'}}>SILVER Package</h3>
-=======
                         <h3>SILVER Package</h3>
->>>>>>> develop
                         <p>{props.services.gold.p1}</p>
                         <p>{props.services.gold.p2}</p>
                         <h4>FEES:</h4>
@@ -51,11 +47,7 @@ const Services = (props) => {
                 </div>
                 <div className="row" style={{'margin':'20px 0px'}}>
                     <div className="col-lg-8">
-<<<<<<< HEAD
-                        <h3 style={{'color':'#cddc39'}}>GOLD Package</h3>
-=======
                         <h3>GOLD Package</h3>
->>>>>>> develop
                         <p>{props.services.silver.p1}</p>
                         <p>{props.services.silver.p2}</p>
                         <h4>FEES:</h4>

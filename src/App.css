@@ -104,18 +104,11 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-<<<<<<< HEAD
-  background: #64138d;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border-color:none; 
-=======
   background: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border-color:none; 
   margin-bottom: 0px;
->>>>>>> develop
 }
 .navbar-custom .navbar-brand {
   color: white;
@@ -212,10 +205,7 @@ section {
   display: block;
 }
 section h2 {
-<<<<<<< HEAD
-=======
   color: #00458b;
->>>>>>> develop
   margin: 10px;
   font-size: 3em;
 }
@@ -223,14 +213,8 @@ section.success h3 {
   color: #00458b;
 }
 section.success {
-<<<<<<< HEAD
-  /*background: linear-gradient(rebeccapurple, #7c23a1);*/
-  color: purple;
-  margin-top: -20px;
-=======
   /*color: purple;
   margin-top: -20px;*/
->>>>>>> develop
 }
 @media (max-width: 767px) {
   section {
@@ -345,11 +329,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-<<<<<<< HEAD
-  background-color: #64138d;
-=======
   background-color: #f3f3f3;
->>>>>>> develop
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -357,11 +337,7 @@ footer .footer-col {
 footer .footer-below {
   color:white;
   padding: 25px 0;
-<<<<<<< HEAD
-  background-color: #551078;
-=======
   background: #00458b;
->>>>>>> develop
 }
 .btn-outline {
   color: #00458b;

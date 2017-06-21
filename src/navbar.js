@@ -6,11 +6,7 @@ import SubNav  from './subnav';
 const Navbar = (props) => {
     return (
         <div>
-<<<<<<< HEAD
-            <nav id="mainNav" className="navbar navbar-default navbar-custom">
-=======
             <nav className="hidden-xs navbar navbar-default navbar-custom">
->>>>>>> develop
                 <div className="container">
                     <div className="navbar-header">
                         <a href="/">
