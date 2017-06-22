@@ -12,7 +12,11 @@ const SubNav = () => {
                                 data-target="#bs-example-navbar-collapse-1">
                             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                         </button>
-                         <div className="visible-xs tagline">Add Glamour Home Staging</div>
+                        <div className="navbar-header visible-xs">
+                            <a href="/">
+                                <img src={require('./img/wLogo.png')} className="img-responsive logo-img img-rounded" alt="Add Glamour logo" />
+                            </a>
+                        </div>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul className="nav navbar-nav">
