@@ -20,10 +20,10 @@ const Footer = (props) => {
                             <h3>Around the Web</h3>
                             <ul className="list-inline">
                                 <li>
-                                    <a href="https://www.facebook.com/" target="_blank" className="btn-social btn-outline"><span className="sr-only">Facebook</span><i className="fa fa-fw fa-facebook"></i></a>
+                                    <a href="https://www.facebook.com/Add-Glamour-Home-Staging-662480170611616/" target="_blank" className="btn-social btn-outline"><span className="sr-only">Facebook</span><i className="fa fa-fw fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://plus.google.com" target="_blank" className="btn-social btn-outline"><span className="sr-only">Google Plus</span><i className="fa fa-fw fa-google-plus"></i></a>
+                                    <a href="https://goo.gl/photos/dimTpX1ktaueqGG5A" target="_blank" className="btn-social btn-outline"><span className="sr-only">Google Plus</span><i className="fa fa-fw fa-google-plus"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com" target="_blank" className="btn-social btn-outline"><span className="sr-only">Twitter</span><i className="fa fa-fw fa-twitter"></i></a>
