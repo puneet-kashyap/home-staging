@@ -9,7 +9,7 @@ const Gallery = (props) => {
           items={props.album}
           showThumbnails={true}
           autoPlay={true}
-          disableThumbnailScroll={false}
+          disableThumbnailScroll={true}
           slideOnThumbnailHover={true}
           startIndex={0}
         />

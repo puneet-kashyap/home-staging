@@ -7,7 +7,7 @@ const Modal = (props) => {
                 <div className="portfolio-modal modal fade" id={props.id} tabIndex="-1" role="dialog"
                      aria-hidden="true">
                     <div className="modal-content">
-                        <div className="close-modal" data-dismiss="modal">
+                        <div className="close-modal hidden-xs" data-dismiss="modal">
                             <div className="lr">
                                 <div className="rl">
                                 </div>
