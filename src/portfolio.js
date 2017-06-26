@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from './modal';
 import Navbar from './navbar';
 import Footer from './footer';
+import { prudhommeImages } from './files/images';
 
 const Portfolio = () => {
         return (
@@ -33,7 +34,7 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/Prudhomme/IMG_0009.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                          
+                                <img src={require('./img/Prudhomme/IMG_0009.jpg')} className="img-responsive" alt="Prudhomme Home"></img>
                             </a>
                         </div>
                         <div className="col-sm-4 portfolio-item">
@@ -73,26 +74,27 @@ const Portfolio = () => {
                                         <i className="fa fa-search-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img src={require('./img/Prudhomme/IMG_0033.jpg')} className="img-responsive" alt="Prudhomme Home"></img>                        
+                                <img src={require('./img/Prudhomme/IMG_0033.jpg')} className="img-responsive" alt="Prudhomme Home"></img>
                             </a>
-                        </div>                          
+                        </div>
                     </div>
-                    
-                    <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameBorder="0" allowFullscreen></iframe>
+
+                    <iframe className="hidden-xs center-block embed-responsive-item " width="853" height="480" src="https://www.youtube.com/embed/z82anwWv6EY" frameBorder="0" allowFullScreen></iframe>
                     <div className="embed-responsive embed-responsive-16by9 visible-xs">
                         <iframe className="visible-xs center-block embed-responsive-item" src="https://www.youtube.com/embed/z82anwWv6EY"></iframe>
-                    </div> 
-                
+                    </div>
+
                 </div>
             </section>
 
                 {/*Portfolio Modals*/}
                 <Modal
+                    album= {prudhommeImages}
                     id='portfolioModal1'
                     client='Brampton'
                     description='Home staging done at Prudhomme drive, Brampton.'
                 />
-                    
+
                 <Modal
                     id='portfolioModal2'
                     header='Condo Staging'

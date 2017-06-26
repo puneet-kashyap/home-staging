@@ -19,7 +19,7 @@ const Modal = (props) => {
                                     <div className="modal-body">
                                         <h2>{props.header}</h2>
                                         <hr className="star-primary"/>
-                                        <Gallery album={prudhommeImages}/>
+                                        <Gallery album={props.album}/>
                                         <p>{props.description}</p>
                                         <ul className="list-inline item-details">
                                             <li>City:
@@ -53,7 +53,8 @@ Modal.defaultProps = {
     description: "Home staging done at Prudhomme drive, Brampton.",
     client: "Toronto",
     date: "April 2017",
-    service: "Home Staging"
+    service: "Home Staging",
+    album: prudhommeImages
 }
 
 export default Modal;
