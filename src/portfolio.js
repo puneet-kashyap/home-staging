@@ -2,7 +2,6 @@ import React from 'react';
 import Modal from './modal';
 import Navbar from './navbar';
 import Footer from './footer';
-import { prudhommeImages } from './files/images';
 import { rainforestImages } from './files/images';
 
 const Portfolio = () => {

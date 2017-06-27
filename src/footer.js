@@ -16,14 +16,15 @@ const Footer = (props) => {
                                 <br/>{props.owner.owner1.address2}<br/>
                             </span></p>
                         </div>
-                        <div className="footer-col col-md-4 hidden-xs">
+                        <div className="footer-col col-md-4">
+                          <div className="hidden-xs">
                             <h3>Around the Web</h3>
                             <ul className="list-inline">
                                 <li>
                                     <a href="https://www.facebook.com/Add-Glamour-Home-Staging-662480170611616/" target="_blank" className="btn-social btn-outline"><span className="sr-only">Facebook</span><i className="fa fa-fw fa-facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="https://goo.gl/photos/dimTpX1ktaueqGG5A" target="_blank" className="btn-social btn-outline"><span className="sr-only">Google Plus</span><i className="fa fa-fw fa-google-plus"></i></a>
+                                    <a href="https://goo.gl/photos/ChVEJGXaPUT8dZbx7" target="_blank" className="btn-social btn-outline"><span className="sr-only">Google Plus</span><i className="fa fa-fw fa-google-plus"></i></a>
                                 </li>
                                 <li>
                                     <a href="https://twitter.com" target="_blank" className="btn-social btn-outline"><span className="sr-only">Twitter</span><i className="fa fa-fw fa-twitter"></i></a>
@@ -32,6 +33,8 @@ const Footer = (props) => {
                                     <a href="https://www.linkedin.com" target="_blank" className="btn-social btn-outline"><span className="sr-only">Linked In</span><i className="fa fa-fw fa-linkedin"></i></a>
                                 </li>
                             </ul>
+                            </div>
+                            <div className="fb-like" data-href="https://www.facebook.com/Add-Glamour-Home-Staging-662480170611616/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                         </div>
                         <div className="footer-col col-md-4">
                             <h3>{props.owner.owner2.name}</h3>

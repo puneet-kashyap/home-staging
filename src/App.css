@@ -338,6 +338,15 @@ footer .footer-below {
   padding: 25px 0;
   background: #00458b;
 }
+footer .fb-like {
+  padding-top: 15px;
+}
+@media (min-width: 767px) {
+  footer .footer-col {
+    margin-bottom: 25px;
+  }
+}
+
 .btn-outline {
   color: #00458b;
   font-size: 20px;
