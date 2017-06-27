@@ -34,7 +34,7 @@ const Footer = (props) => {
                                 </li>
                             </ul>
                             </div>
-                            <div className="fb-like" style={{'paddingTop':'15px'}} data-href="https://www.facebook.com/Add-Glamour-Home-Staging-662480170611616/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                            <div className="fb-like" data-href="https://www.facebook.com/Add-Glamour-Home-Staging-662480170611616/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                         </div>
                         <div className="footer-col col-md-4">
                             <h3>{props.owner.owner2.name}</h3>
