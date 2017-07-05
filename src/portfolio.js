@@ -92,10 +92,10 @@ const Portfolio = () => {
 
                 {/*Portfolio Modals*/}
                 <Modal
-                    album= {rainforestImages}
+                    album={rainforestImages}
                     id='portfolioModal1'
                     client='Brampton'
-                    date = 'June 2017'
+                    date='June 2017'
                     description='Home staging done at 140 Rainforest drive, Brampton.'
                 />
 
