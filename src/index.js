@@ -13,7 +13,6 @@ import Portfolio from './portfolio';
 import Services from './services';
 import allReducers from './reducers';
 import {initiateDB} from './actions';
-import {initiateStorage} from './actions';
 
 const middleware = applyMiddleware(logger)
 export const store = createStore(allReducers, middleware);
@@ -31,5 +30,15 @@ ReactDOM.render((
     </BrowserRouter>
   </Provider>
 ), document.getElementById('root'));
-initiateDB()
-initiateStorage()
+
+
+if (typeof(Storage) !== "undefined") {
+  if (!localStorage.initiated){
+    initiateDB()
+    localStorage.initiated = true
+    console.log('Database initiated with local storage')
+  }
+} else {
+  initiateDB()
+  console.log('Database initiated without local storage')
+}
