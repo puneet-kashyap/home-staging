@@ -12,7 +12,7 @@ import Contact from './contact';
 import Portfolio from './portfolio';
 import Services from './services';
 import allReducers from './reducers';
-import {initiateDB} from './actions';
+import {initDB, updateStore} from './actions';
 
 const middleware = applyMiddleware(logger)
 export const store = createStore(allReducers, middleware);
@@ -33,12 +33,14 @@ ReactDOM.render((
 
 
 if (typeof(Storage) !== "undefined") {
-  if (!localStorage.initiated){
-    initiateDB()
-    localStorage.initiated = true
-    console.log('Database initiated with local storage')
+  if (!sessionStorage.initiated){
+    initDB()
+    console.log('Database initiated with session storage')
+  } else {
+    updateStore()
+    console.log('Memory store used')
   }
 } else {
-  initiateDB()
-  console.log('Database initiated without local storage')
+  initDB()
+  console.log('Database initiated without session storage')
 }
