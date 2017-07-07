@@ -101,31 +101,26 @@ const Portfolio = () => {
 
                 <Modal
                     id='portfolioModal2'
-                    header='Condo Staging'
                     city='Brampton'
                     date='May 2017'
                     service='Condo Staging'/>
                 <Modal
                     id='portfolioModal3'
-                    header='Commercial property staging'
                     city='Malton'
                     date='March 2017'
                     service='Commercial property staging'/>
                 <Modal
                     id='portfolioModal4'
-                    header='Vacant home staging'
                     city='Malton'
                     date='December 2016'
                     service='Vacant home staging'/>
                 <Modal
                     id='portfolioModal5'
-                    header='Condo Staging'
                     city='Woodbine'
                     date='October 2016'
                     service='Condo Staging'/>
                 <Modal
                     id='portfolioModal6'
-                    header='Home Staging'
                     city='Vaughan'
                     date='April 2016'
                     service='Home Staging'/>

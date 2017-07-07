@@ -49,7 +49,7 @@ const Modal = (props) => {
 
 Modal.defaultProps = {
     id: "portfolioModal1",
-    header: "Home Staging",
+    header: "Staging Project",
     description: "Home staging done at Prudhomme drive, Brampton.",
     client: "Toronto",
     date: "April 2017",
