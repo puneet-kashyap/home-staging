@@ -32,15 +32,9 @@ ReactDOM.render((
 ), document.getElementById('root'));
 
 
-if (typeof(Storage) !== "undefined") {
-  if (!sessionStorage.initiated){
+if (typeof(Storage) === "undefined" || !sessionStorage.snapshot){
     initDB()
-    console.log('Database initiated with session storage')
   } else {
     updateStore()
     console.log('Memory store used')
   }
-} else {
-  initDB()
-  console.log('Database initiated without session storage')
-}

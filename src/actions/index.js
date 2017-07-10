@@ -1,70 +1,77 @@
 import fire from '../fire';
 import {store} from '../index'
+import * as db from '../reducers/firebaseDB';
 
 const getSessionStorage = () => {
-  const snapshot = JSON.parse(sessionStorage.getItem('snapshot'));
+  let snapshot
+  if (!sessionStorage.snapshot || typeof(Storage) !== "undefined"){
+    snapshot = db
+  } else {
+    snapshot = JSON.parse(sessionStorage.getItem('snapshot'));
+  }
   return snapshot
 }
+const database = getSessionStorage()
 
 export const updateStore = () => {
   store.dispatch({
       type:'UPDATE_OWNER',
           owner1 : {
-              name: getSessionStorage().owners.owner1.name,
-              phone : getSessionStorage().owners.owner1.phone,
-              email : getSessionStorage().owners.owner1.email,
-              address1 : getSessionStorage().owners.owner1.address1,
-              address2 : getSessionStorage().owners.owner1.address2
+              name: database.owners.owner1.name,
+              phone : database.owners.owner1.phone,
+              email : database.owners.owner1.email,
+              address1 : database.owners.owner1.address1,
+              address2 : database.owners.owner1.address2
           },
           owner2 : {
-            name: getSessionStorage().owners.owner2.name,
-            phone : getSessionStorage().owners.owner2.phone,
-            email : getSessionStorage().owners.owner2.email,
-            address1 : getSessionStorage().owners.owner2.address1,
-            address2 : getSessionStorage().owners.owner2.address2
+            name: database.owners.owner2.name,
+            phone : database.owners.owner2.phone,
+            email : database.owners.owner2.email,
+            address1 : database.owners.owner2.address1,
+            address2 : database.owners.owner2.address2
           }
   })
   store.dispatch({
       type:'UPDATE_PRICE',
           consultation : {
-              small: getSessionStorage().prices.consultation.small,
-              medium : getSessionStorage().prices.consultation.medium,
-              large : getSessionStorage().prices.consultation.large
+              small: database.prices.consultation.small,
+              medium : database.prices.consultation.medium,
+              large : database.prices.consultation.large
           },
           gold : {
-              small : getSessionStorage().prices.gold.small,
-              medium : getSessionStorage().prices.gold.medium,
-              large : getSessionStorage().prices.gold.large,
+              small : database.prices.gold.small,
+              medium : database.prices.gold.medium,
+              large : database.prices.gold.large,
           }
   })
   store.dispatch({
       type:'UPDATE_SERVICE',
           consultation : {
-              p1: getSessionStorage().services.consultation.p1
+              p1: database.services.consultation.p1
           },
           gold : {
-              p1: getSessionStorage().services.gold.p1,
-              p2: getSessionStorage().services.gold.p2
+              p1: database.services.gold.p1,
+              p2: database.services.gold.p2
           },
           silver : {
-              p1: getSessionStorage().services.silver.p1,
-              p2: getSessionStorage().services.silver.p2
+              p1: database.services.silver.p1,
+              p2: database.services.silver.p2
           },
           platinum : {
-              p1: getSessionStorage().services.platinum.p1,
-              p2: getSessionStorage().services.platinum.p2
+              p1: database.services.platinum.p1,
+              p2: database.services.platinum.p2
           }
   })
   store.dispatch({
       type:'UPDATE_ABOUT_US',
           aboutUs : {
-              p1: getSessionStorage().about.aboutUs.p1,
-              p2: getSessionStorage().about.aboutUs.p2,
-              p3: getSessionStorage().about.aboutUs.p3,
-              p4: getSessionStorage().about.aboutUs.p4
+              p1: database.about.aboutUs.p1,
+              p2: database.about.aboutUs.p2,
+              p3: database.about.aboutUs.p3,
+              p4: database.about.aboutUs.p4
           },
           doYouKnow : {
-              p1: getSessionStorage().about.doYouKnow.p1
+              p1: database.about.doYouKnow.p1
           }
   })
 }
@@ -73,8 +80,10 @@ export const initDB = () => {
     const dbRef = fire.database().ref();
     dbRef.once("value")
     .then(function(snapshot) {
+      if (typeof(Storage) !== "undefined"){
         sessionStorage.setItem('snapshot',JSON.stringify(snapshot))
-        sessionStorage.initiated = true
+        console.log('Database initiated with session storage')
+      }
         updateStore()
     });
 }
