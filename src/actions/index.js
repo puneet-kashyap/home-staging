@@ -18,13 +18,13 @@ export const storageEnabled = () => {
 
 const getSessionStorage = () => {
   let snapshot
-  if ((!storageEnabled()) && (!sessionStorage.snapshot)){
+  if (!storageEnabled()){
     snapshot = db
     console.log('Local memory used')
   } else {
-    snapshot = sessionStorage.getItem('snapshot');
+    snapshot = JSON.parse(sessionStorage.getItem('snapshot'));
   }
-  return JSON.parse(snapshot)
+  return snapshot
 }
 const dataB = getSessionStorage()
 
