@@ -32,7 +32,7 @@ ReactDOM.render((
 ), document.getElementById('root'));
 
 
-if (typeof(Storage) === "undefined" || !sessionStorage.snapshot){
+if ((typeof(Storage) === "undefined") || (!sessionStorage.snapshot)){
     initDB()
   } else {
     updateStore()
