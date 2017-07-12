@@ -4,7 +4,7 @@ import * as db from '../reducers/firebaseDB';
 
 const getSessionStorage = () => {
   let snapshot
-  if (!sessionStorage.snapshot || typeof(Storage) !== "undefined"){
+  if ((typeof(Storage) === "undefined") || (!sessionStorage.snapshot)){
     snapshot = db
   } else {
     snapshot = JSON.parse(sessionStorage.getItem('snapshot'));
