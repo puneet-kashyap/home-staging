@@ -2,18 +2,33 @@ import fire from '../fire';
 import {store} from '../index'
 import * as db from '../reducers/firebaseDB';
 
+export const storageEnabled = () => {
+    try {
+        localStorage.setItem('init', 'yes');
+        if (localStorage.getItem('init') === 'yes') {
+            localStorage.removeItem('init');
+            return true
+        } else {
+            return false
+        }
+    } catch(e) {
+        return false
+    }
+}
+
 const getSessionStorage = () => {
   let snapshot
-  if ((typeof(Storage) === "undefined") || (!sessionStorage.snapshot)){
+  if ((!storageEnabled()) && (!sessionStorage.snapshot)){
     snapshot = db
+    console.log('Local memory used')
   } else {
-    snapshot = JSON.parse(sessionStorage.getItem('snapshot'));
+    snapshot = sessionStorage.getItem('snapshot');
   }
-  return snapshot
+  return JSON.parse(snapshot)
 }
-const database = getSessionStorage()
+const dataB = getSessionStorage()
 
-export const updateStore = () => {
+export const updateStore = (database=dataB) => {
   store.dispatch({
       type:'UPDATE_OWNER',
           owner1 : {
@@ -77,13 +92,18 @@ export const updateStore = () => {
 }
 
 export const initDB = () => {
+  if (storageEnabled() && (!sessionStorage.snapshot)){
     const dbRef = fire.database().ref();
     dbRef.once("value")
     .then(function(snapshot) {
-      if (typeof(Storage) !== "undefined"){
-        sessionStorage.setItem('snapshot',JSON.stringify(snapshot))
+      let stringSnapshot = JSON.stringify(snapshot)
+      let parsedSnapshot = JSON.parse(stringSnapshot)
+      updateStore(parsedSnapshot)
+        sessionStorage.setItem('snapshot',stringSnapshot)
         console.log('Database initiated with session storage')
-      }
-        updateStore()
     });
+  } else {
+    updateStore()
+    console.log('Memory store used')
+  }
 }
