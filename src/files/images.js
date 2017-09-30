@@ -54,3 +54,24 @@
 
     export const rainforestImages = []
     rainforestPix.forEach((item) => rainforestImages.push({original:item, thumbnail:item}))
+
+    let folkstonePix = [
+      require('./../img/Portfolio/Folkstone/IMG_0011.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0012.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0013.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0014.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0015.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0016.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0017.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0018.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0019.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0020.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0021.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0022.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0023.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0024.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0025.jpg'),
+      require('./../img/Portfolio/Folkstone/IMG_0032.jpg')
+    ]
+    export const folkstoneImages = []
+    folkstonePix.forEach((item) => folkstoneImages.push({original:item, thumbnail:item}))
