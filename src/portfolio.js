@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from './modal';
 import Navbar from './navbar';
 import Footer from './footer';
-import { rainforestImages } from './files/images';
+import { rainforestImages, folkstoneImages } from './files/images';
 
 const Portfolio = () => {
         return (
@@ -35,9 +35,12 @@ const Portfolio = () => {
                                 <div className="caption">
                                     <div className="caption-content">
                                         <i className="fa fa-search-plus fa-3x"></i>
+                                        <div style={{'padding':'10px'}}>
+                                        <span>182 Folkstone Crescent,<br/> Brampton</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <img src={require('./img/Portfolio/Prudhomme/IMG_0009.jpg')} className="img-responsive" alt="Prudhomme Home"></img>
+                                <img src={require('./img/Portfolio/Folkstone/IMG_0012.jpg')} className="img-responsive" alt="Folkstone Home"></img>
                             </a>
                         </div>
                         <div className="col-sm-4 portfolio-item">
@@ -100,10 +103,11 @@ const Portfolio = () => {
                 />
 
                 <Modal
+                    album={folkstoneImages}
                     id='portfolioModal2'
-                    city='Brampton'
-                    date='May 2017'
-                    service='Condo Staging'/>
+                    client='Brampton'
+                    date='September 2017'
+                    description='Home staging done at 182 Folkstone Crescent, Brampton.'/>
                 <Modal
                     id='portfolioModal3'
                     city='Malton'
