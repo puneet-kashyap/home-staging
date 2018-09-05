@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from './modal';
 import Navbar from './navbar';
 import Footer from './footer';
-import { rainforestImages } from './files/images';
+import { rainforestImages, folkstoneImages } from './files/images';
 
 const portfolioModal = [
     {id: '#portfolioModal1', address: '140 Rainforest Drive', city: 'Brampton', img: require('./img/Portfolio/Rainforest/IMG_0015.jpg')},
@@ -74,6 +74,35 @@ const Portfolio = () => {
                     />
                 )}
 
+<<<<<<< HEAD
+=======
+                <Modal
+                    album={folkstoneImages}
+                    id='portfolioModal2'
+                    client='Brampton'
+                    date='September 2017'
+                    description='Home staging done at 182 Folkstone Crescent, Brampton.'/>
+                <Modal
+                    id='portfolioModal3'
+                    city='Malton'
+                    date='March 2017'
+                    service='Commercial property staging'/>
+                <Modal
+                    id='portfolioModal4'
+                    city='Malton'
+                    date='December 2016'
+                    service='Vacant home staging'/>
+                <Modal
+                    id='portfolioModal5'
+                    city='Woodbine'
+                    date='October 2016'
+                    service='Condo Staging'/>
+                <Modal
+                    id='portfolioModal6'
+                    city='Vaughan'
+                    date='April 2016'
+                    service='Home Staging'/>
+>>>>>>> 8e59d036bfe559b4a8b075d01358b204339162ba
             <Footer />
             </div>
         );
