@@ -6,7 +6,6 @@ const db = admin.database();
 const galleryRef = db.ref("gallery");
 
 exports.retrieveStorage = functions.storage.object().onFinalize((object) => {
-
     if (object.name.startsWith('Gallery/')){
         const name = object.name.split('/');
         const folderName = name[1];
@@ -18,5 +17,15 @@ exports.retrieveStorage = functions.storage.object().onFinalize((object) => {
         });
         console.log(object);
     }
-    
+});
+
+exports.onDeleteImages = functions.storage.object().onDelete((object) => {
+    if (object.name.startsWith('Gallery/')) {
+        const name = object.name.split('/');
+        const folderName = name[1];
+        const fileName = name[2].split('.')[0];
+        //deletes the db reference when image is removed
+        galleryRef.child(folderName).child(fileName).remove();
+        console.log(object);
+    };
 })
