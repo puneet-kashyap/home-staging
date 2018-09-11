@@ -1,0 +1,56 @@
+{
+    "src_folders" : ["tests/e2e"],
+    "output_folder" : "tests/reports",
+    "custom_commands_path" : "",
+    "custom_assertions_path" : "",
+    "page_objects_path" : "",
+    "globals_path" : "",
+
+    "selenium" : {
+      "start_process" : true,
+      "server_path": "./node_modules/selenium-server-standalone-jar/jar/selenium-server-standalone-3.14.0.jar",
+      "log_path": "./tests/e2e/logs/",
+      "port" : 4444,
+      "cli_args" : {
+        "webdriver.chrome.driver": "./node_modules/chromedriver/bin/chromedriver",
+        "webdriver.gecko.driver": "./node_modules/geckodriver/bin/geckodriver",
+        "webdriver.edge.driver" : "./node_modules/geckodriver/bin/edgedriver"
+      }
+    },
+
+    "test_settings" : {
+      "default" : {
+        "launch_url" : "https://addglamour.ca",
+        "selenium_port"  : 4444,
+        "selenium_host"  : "localhost",
+        "silent": true,
+        "screenshots" : {
+          "enabled" : false,
+          "path" : ""
+        },
+        "desiredCapabilities": {
+          "browserName": "chrome",
+          "marionette": true
+        },
+        "test_runner": {
+          "type": "mocha",
+          "options": {
+            "ui": "bdd",
+            "reporter": "list"
+          }
+        }
+      },
+
+      "chrome" : {
+        "desiredCapabilities": {
+          "browserName": "chrome"
+        }
+      },
+
+      "edge" : {
+        "desiredCapabilities": {
+          "browserName": "MicrosoftEdge"
+        }
+      }
+    }
+  }
