@@ -52,7 +52,7 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            Copyright &copy; Add Glamour Home Staging 2017
+                            Copyright &copy; Add Glamour Home Staging {new Date().getFullYear()}
                         </div>
                     </div>
                 </div>
