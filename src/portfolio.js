@@ -70,7 +70,6 @@ const Portfolio = () => {
               <hr className="star-primary" />
             </div>
           </div>
-
           <div className="row test">
             {portfolioModal.map((item, index) => (
               <div className="col-sm-4 portfolio-item" key={index}>
@@ -83,7 +82,6 @@ const Portfolio = () => {
                     <div className="caption-content">
                       <i className="fa fa-search-plus fa-3x" />
                       <div style={{'padding':'10px'}}>
-                      {/* <span></span> */}
                       </div>
                     </div>
                   </div>
@@ -125,7 +123,6 @@ const Portfolio = () => {
           description="Brampton"
         />
       ))}
-
       <Footer />
     </div>
   );
